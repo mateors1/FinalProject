@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 90065e0b5738c024cb716260ecdc62de
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 183279
+  packageName: Quirky Series - River Animals Vol.1
+  packageVersion: 1.4
+  assetPath: Assets/Quirky Series Ultimate/_Scripts/Demo.cs
+  uploadId: 566564
