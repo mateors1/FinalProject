@@ -237,7 +237,7 @@ MonoBehaviour:
   m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8403509536502194990, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
+  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_text: Settings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8403509536502194990, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
+  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1322,7 +1322,7 @@ MonoBehaviour:
   m_text: 'mimi '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8403509536502194990, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
+  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1899,7 +1899,7 @@ MonoBehaviour:
   m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8403509536502194990, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
+  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2034,7 +2034,7 @@ MonoBehaviour:
   m_text: I wanna go to meow home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8403509536502194990, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
+  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
