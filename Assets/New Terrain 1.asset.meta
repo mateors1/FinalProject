@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/New Terrain 1.asset.meta
 guid: 1dd3be268776eea49b7f4e1ed0a8a66c
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 15600000
+========
+guid: 0f0093fb641c21b4ebcaba9734c84d77
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+>>>>>>>> Liz:Assets/Quirky Series Ultimate/FREE/Materials/T_Sparrow.mat.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/InputSystem.inputsettings.asset.meta
 guid: 6da9096395c698b4ab8eb82029e5d008
+========
+guid: 847a51cfbcdf6d444a1391bf0c6661aa
+>>>>>>>> Liz:Assets/Fonts/Pangolin-Regular SDF.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
