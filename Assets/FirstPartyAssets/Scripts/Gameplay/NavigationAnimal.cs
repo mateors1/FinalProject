@@ -27,6 +27,4 @@ public class AnimalNavigation : MonoBehaviour
         }
     }
 
-
-
 }
