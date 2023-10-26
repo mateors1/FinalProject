@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ClockSpawner : MonoBehaviour
 {
+
     public GameObject clockPlane;
     public GameObject objectToSpawn;
     public float distanceFromCenter;
@@ -23,20 +24,24 @@ public class ClockSpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(advancesLevel && isLevelGoal)
+        if (other.CompareTag("Player"))
         {
-            AdvanceToNextLevel();
+            if (advancesLevel && isLevelGoal)
+            {
+                AdvanceToNextLevel();
+            }
+
+            else if (isLevelGoal)
+            {
+                LoadNextLevel();
+            }
+
+            else
+            {
+                LoadRandomLevel();
+            }
         }
 
-        else if (isLevelGoal)
-        {
-            LoadNextLevel();
-        }
-
-        else
-        {
-            LoadRandomLevel();
-        }
         
     }
 

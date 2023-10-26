@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int ScenesSolved;
+    public int ScenesSolved =0;
     public static GameManager instance;
-    public int unlockedLevels =2;
+    public int unlockedLevels =1;
     public GameObject[] gameLevels;
 
     private void Start()
