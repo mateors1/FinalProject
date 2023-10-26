@@ -1,20 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SparrowWayPointTrigger : MonoBehaviour
-
-
 {
-    // Start is called before the first frame update
-    void Start()
+    public Transform player;
+    public Transform EndOflevel;
+    Transform defaultPoint;
+    NavMeshAgent agent;
+    Transform currentTarget;
+
+
+    private void OnEnable()
     {
-        
+        transform.position = defaultPoint.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
+
     {
-        
+        agent = GetComponent<NavMeshAgent>();
+        currentTarget = player;
     }
+
+    private void Update()
+    {
+
+        if (agent.remainingDistance < agent.stoppingDistance)
+        {
+            SwitchTarget();
+        }
+    }
+
+    void SwitchTarget()
+    {
+        currentTarget = currentTarget == player ? EndOflevel : player;
+    }
+
+
+
 }
