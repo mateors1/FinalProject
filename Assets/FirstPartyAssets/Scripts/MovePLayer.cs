@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class MovePLayer : MonoBehaviour
 {
+    [SerializeField] InputActionAsset playerControls;
     private InputAction moveAction;
     private Rigidbody rb;
     [SerializeField] GameObject Camera;
@@ -12,8 +13,7 @@ public class MovePLayer : MonoBehaviour
     Vector2 move, look;
     void Start()
     {
-        moveAction = new InputAction("Move");
-        moveAction.Enable();
+        moveAction = playerControls.FindAction("Move");
         rb = GetComponent<Rigidbody>(); 
     }
 
@@ -33,6 +33,8 @@ public class MovePLayer : MonoBehaviour
     {
         Vector2 movement = moveAction.ReadValue<Vector2>();
 
-        rb.AddForce(movement += movement * speed * Time.fixedDeltaTime, ForceMode.Impulse);
+        Vector3 mimiMoves = new Vector3(movement.x, 0, movement.y);
+
+        rb.AddForce(mimiMoves += mimiMoves * speed * Time.fixedDeltaTime, ForceMode.Impulse);
     }
 }
