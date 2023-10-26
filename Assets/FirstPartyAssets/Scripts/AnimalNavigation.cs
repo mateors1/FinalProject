@@ -5,39 +5,26 @@ using UnityEngine.AI;
 
 public class AnimalNavigation : MonoBehaviour
 {
+    private bool canFollow = false;
     public Transform player;
-    public Transform EndOflevel;
-    Transform defaultPoint;
-    NavMeshAgent agent;
-    Transform currentTarget;
-
-
-    private void OnEnable()
-    {
-        transform.position = defaultPoint.position;
-    }
-
+    protected NavMeshAgent agentAnimal;
     void Start()
-
     {
-        agent = GetComponent<NavMeshAgent>();
-        currentTarget = player;
+        agentAnimal = GetComponent<NavMeshAgent>();
     }
-
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-
-        if (agent.remainingDistance < agent.stoppingDistance)
+        if (other.CompareTag("Player"))
         {
-            SwitchTarget();
+            canFollow = true;
         }
     }
-
-    void SwitchTarget()
+    private void Update()
     {
-        currentTarget = currentTarget == player ? EndOflevel : player;
+        if (canFollow)
+        {
+            agentAnimal.SetDestination(player.position);
+        }
     }
-
-
 
 }
