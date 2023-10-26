@@ -236,13 +236,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-<<<<<<< HEAD
-  m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
-=======
   m_fontAsset: {fileID: 11400000, guid: 847a51cfbcdf6d444a1391bf0c6661aa, type: 2}
   m_sharedMaterial: {fileID: -1527509116825548122, guid: 847a51cfbcdf6d444a1391bf0c6661aa,
->>>>>>> Liz
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1030,13 +1025,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Settings
   m_isRightToLeft: 0
-<<<<<<< HEAD
-  m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
-=======
   m_fontAsset: {fileID: 11400000, guid: 847a51cfbcdf6d444a1391bf0c6661aa, type: 2}
   m_sharedMaterial: {fileID: -1527509116825548122, guid: 847a51cfbcdf6d444a1391bf0c6661aa,
->>>>>>> Liz
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3359,13 +3349,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-<<<<<<< HEAD
-  m_fontAsset: {fileID: 11400000, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7, type: 2}
-  m_sharedMaterial: {fileID: 8726887093466327806, guid: 1fc0392ca81d07b4dbfe0a440ab7cfd7,
-=======
   m_fontAsset: {fileID: 11400000, guid: 847a51cfbcdf6d444a1391bf0c6661aa, type: 2}
   m_sharedMaterial: {fileID: -1527509116825548122, guid: 847a51cfbcdf6d444a1391bf0c6661aa,
->>>>>>> Liz
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
