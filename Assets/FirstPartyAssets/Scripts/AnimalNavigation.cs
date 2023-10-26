@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavigationAnimal : MonoBehaviour
+public class AnimalNavigation : MonoBehaviour
 {
     private bool canFollow = false;
     public Transform player;
