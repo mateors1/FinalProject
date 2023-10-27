@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 2024025700}
   - component: {fileID: 2024025699}
   - component: {fileID: 2024025698}
-  - component: {fileID: 2024025697}
+  - component: {fileID: 2024025702}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -925,21 +925,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2024025697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024025696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a0393ec4b2351849bc8fda74aec62b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMimo: 100
-  curretMimo: 0
-  mimoBar: {fileID: 1421379180}
 --- !u!136 &2024025698
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1028,6 +1013,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024025702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024025696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0393ec4b2351849bc8fda74aec62b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxMimo: 50
+  currentMimo: 0
+  mimoBar: {fileID: 1421379180}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
