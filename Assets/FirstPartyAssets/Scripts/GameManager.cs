@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int unlockedLevels =1;
     public GameObject[] gameLevels;
-    public MimosBarBehaviour mimosBarBehaviour;
+   // public MimosBarBehaviour mimosBarBehaviour;
 
     private void Start()
     {
