@@ -14,7 +14,7 @@ public class SparrowWayPointTrigger : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.position = EndOflevel.position;
+        //transform.position = EndOflevel.position;
     }
 
     void Start()

@@ -583,7 +583,6 @@ GameObject:
   - component: {fileID: 260691902}
   - component: {fileID: 260691901}
   - component: {fileID: 260691900}
-  - component: {fileID: 260691903}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -678,37 +677,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260691898}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &260691903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 260691898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AgentTypeID: 0
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: f72779ea12a9a5a41913ba6ac5a73db5, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!1 &284262707
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,6 +3726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparrow_LOD0
       objectReference: {fileID: 0}
+    - target: {fileID: 2919116957122212826, guid: 0c98f994f7df1f849858fd2d6de9b731,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5522063727655563455, guid: 0c98f994f7df1f849858fd2d6de9b731,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4640,11 +4613,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScenesSolved: 0
-  unlockedLevels: 0
+  unlockedLevels: 1
   gameLevels:
   - {fileID: 430484717}
   - {fileID: 525202576}
   - {fileID: 845818693}
+  mimosBarBehaviour: {fileID: 0}
 --- !u!4 &1341726473
 Transform:
   m_ObjectHideFlags: 0
@@ -5589,6 +5563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1577078243}
+  - component: {fileID: 1577078244}
   m_Layer: 0
   m_Name: Level1 (1)
   m_TagString: Untagged
@@ -5617,6 +5592,37 @@ Transform:
   - {fileID: 1148443660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1577078244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577078242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 1
+  m_Size: {x: 100, y: 10, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: a4b184ccd0d1405498aa1afc225cb54c, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1577766596
 GameObject:
   m_ObjectHideFlags: 0
