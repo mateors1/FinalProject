@@ -25,14 +25,14 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void Update()
+   /* private void Update()
     {
         if (mimosBarBehaviour.currentMimo == 0)
         {
             Debug.Log("Game Over");
             Time.timeScale = 0;
         }
-    }
+    }*/
 
 
 
