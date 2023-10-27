@@ -15,11 +15,10 @@ public class MimosBarBehaviour : MonoBehaviour
         currentMimo = maxMimo;
         mimoBar.MaxMimos(maxMimo);
 
-        if (currentMimo >= 0)
-        {
-            InvokeRepeating("MimoDeterioration", 0.5f, timeStep);
+        
+        InvokeRepeating("MimoDeterioration", 0.5f, timeStep);
 
-        }
+   
     }
 
     // Update is called once per frame
@@ -31,8 +30,12 @@ public class MimosBarBehaviour : MonoBehaviour
 
     public void MimoDeterioration()
     {
-        currentMimo -= deterioration;
-        mimoBar.setMimo(currentMimo);
+        if (currentMimo > 0)
+        {
+            currentMimo -= deterioration;
+            mimoBar.setMimo(currentMimo);
+        }
+
     }
 
 }
