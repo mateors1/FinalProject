@@ -37,7 +37,7 @@ public class ClockSpawner : MonoBehaviour
                 LoadNextLevel();
             }
 
-            else
+            else if (GameManager.instance.unlockedLevels<1)
             {
                 LoadRandomLevel();
             }
