@@ -8,6 +8,6 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         Debug.Log("Play");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Prototype");
     }
 }
