@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public int unlockedLevels =1;
     public GameObject[] gameLevels;
-   // public MimosBarBehaviour mimosBarBehaviour;
+    public MimosBarBehaviour mimosBarBehaviour;
 
     private void Start()
     {
@@ -25,14 +25,14 @@ public class GameManager : MonoBehaviour
         
     }
 
-   /* private void Update()
+   private void Update()
     {
         if (mimosBarBehaviour.currentMimo == 0)
         {
             Debug.Log("Game Over");
             Time.timeScale = 0;
         }
-    }*/
+    }
 
 
 
