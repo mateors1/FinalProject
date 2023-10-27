@@ -6,10 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     [SerializeField] Rigidbody rb;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -18,8 +20,13 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
         {
+            animator.SetBool("IsWalking", true);
             MovePlayerRelativeToCamera();
             //rb.MovePosition(rb.position + moveInput * speed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 
