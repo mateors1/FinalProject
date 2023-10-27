@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public class ClockSpawner : MonoBehaviour
@@ -53,6 +54,8 @@ public class ClockSpawner : MonoBehaviour
         // Get the size of the clockPlane
         Vector3 clockPlaneSize = clockPlane.GetComponent<MeshRenderer>().bounds.size;
 
+        
+
         // Calculate the distance from the center based on the size of the clockPlane
         distanceFromCenter = clockPlaneSize.x;
 
@@ -86,8 +89,17 @@ public class ClockSpawner : MonoBehaviour
         // Align the forward direction of plane 2 to face the opposite direction of the spawn direction
         nextLevel.transform.rotation = Quaternion.LookRotation(spawnDirectionVector, clockPlane.transform.up);
         nextLevel.SetActive(true);
+        RebakeNavmesh(nextLevel); 
     }
 
+    void RebakeNavmesh(GameObject nextLevel)
+    {
+        NavMeshSurface surface = nextLevel.GetComponent<NavMeshSurface>();
+        if (surface != null)
+        {
+            surface.BuildNavMesh();
+        }
+    }
 
     void LoadRandomLevel()
     {

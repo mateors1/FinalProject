@@ -7,19 +7,20 @@ public class SparrowWayPointTrigger : MonoBehaviour
 {
     public Transform player;
     public Transform EndOflevel;
-    Transform defaultPoint;
+    Vector3 defaultPoint;
     NavMeshAgent agent;
     Transform currentTarget;
 
 
     private void OnEnable()
     {
-        transform.position = defaultPoint.position;
+        transform.position = EndOflevel.position;
     }
 
     void Start()
 
     {
+        defaultPoint = transform.position;
         agent = GetComponent<NavMeshAgent>();
         currentTarget = player;
     }
