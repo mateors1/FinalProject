@@ -13,6 +13,7 @@ public class ClockSpawner : MonoBehaviour
     [SerializeField]bool isLevelGoal;
     [SerializeField] int currentLevel;
     int nextRandomLevel;
+    [SerializeField] bool canMovePreviousLevel;
 
 
     public enum SpawnDirection
