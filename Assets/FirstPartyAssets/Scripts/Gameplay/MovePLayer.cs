@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MovePLayer : MonoBehaviour
+public class MovePlayer : MonoBehaviour
 {
     [SerializeField] InputActionAsset playerControls;
     private InputAction moveAction;
