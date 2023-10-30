@@ -2361,8 +2361,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.003621054, y: 0.9238382, z: -0.38266638, w: -0.008741998}
-  m_LocalPosition: {x: 11.015083, y: 15, z: -159.85815}
+  m_LocalRotation: {x: 0.01670483, y: 0.9229989, z: -0.38231868, w: 0.04032903}
+  m_LocalPosition: {x: 10.953354, y: 15, z: -164.12573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2922,7 +2922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370875975}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.019192478, y: 0.93090224, z: -0.36380655, w: -0.026412193}
+  m_LocalRotation: {x: 0.03867721, y: 0.929922, z: -0.36499465, w: 0.022983193}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8671,7 +8671,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042810894}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018708888, y: 0.9241307, z: -0.380679, w: -0.026756907}
+  m_LocalRotation: {x: 0.03908886, y: 0.923129, z: -0.38184905, w: 0.022275861}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11980,7 +11980,7 @@ Transform:
   m_GameObject: {fileID: 1373068671}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0016874848, y: -0.008102628, z: 0.027541384, w: 0.99958646}
-  m_LocalPosition: {x: 11.015083, y: 15, z: -159.85815}
+  m_LocalPosition: {x: 10.953354, y: 15, z: -164.12573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14442,7 +14442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556332224}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.019668486, y: 0.937349, z: -0.3468588, w: -0.026059642}
+  m_LocalRotation: {x: 0.038253896, y: 0.9363904, z: -0.34806442, w: 0.023681082}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
