@@ -857,7 +857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87646910}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.023447393, y: 0.92285264, z: -0.38020277, w: 0.056913037}
+  m_LocalRotation: {x: -0.023447393, y: 0.9228527, z: -0.3802027, w: 0.056913022}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2416,7 +2416,7 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: q
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2489,8 +2489,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11183729, y: -0.026152981, z: 0.0029443759, w: 0.993378}
-  m_LocalPosition: {x: 12.789273, y: 7, z: -191.05922}
+  m_LocalRotation: {x: 0.11183729, y: -0.026153106, z: 0.00294439, w: 0.993378}
+  m_LocalPosition: {x: 12.789275, y: 7, z: -191.05922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10407,7 +10407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226552992}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.02447602, y: 0.9295982, z: -0.3633983, w: 0.056478303}
+  m_LocalRotation: {x: -0.024476014, y: 0.9295982, z: -0.36339828, w: 0.05647827}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10620,7 +10620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245855117}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.022408297, y: 0.9157843, z: -0.39692608, w: 0.05733012}
+  m_LocalRotation: {x: -0.022408295, y: 0.91578436, z: -0.39692608, w: 0.057330087}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15495,7 +15495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fdf26f01310a4c4f9033fc9d67c850b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 8
   rb: {fileID: 1667739422}
 --- !u!95 &1667739427
 Animator:
