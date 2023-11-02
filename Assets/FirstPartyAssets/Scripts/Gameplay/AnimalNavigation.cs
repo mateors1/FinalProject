@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class AnimalNavigation : MonoBehaviour
 {
+    public bool inSpace = false;
     private bool canFollow = false;
     private bool isSelectingDestination = false;
     private bool isGoingToTarget = false;
@@ -23,6 +24,7 @@ public class AnimalNavigation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        inSpace = true;
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
             HelpMeMeow();
@@ -35,6 +37,7 @@ public class AnimalNavigation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isSelectingDestination = true;
+            inSpace = false;
         }
 
         // If in selection mode and left mouse button is clicked, set the clicked position as the destination
