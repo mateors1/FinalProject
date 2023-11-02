@@ -28,6 +28,7 @@ public class AnimalNavigation : MonoBehaviour
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
             HelpMeMeow();
+            inSpace = false;
         }
     }
 
@@ -37,7 +38,6 @@ public class AnimalNavigation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isSelectingDestination = true;
-            inSpace = false;
         }
 
         // If in selection mode and left mouse button is clicked, set the clicked position as the destination
