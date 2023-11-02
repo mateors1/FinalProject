@@ -785,10 +785,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game over
+  m_text: GAME OVER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a6fa9ec78dca58448bbbc583dc9adcbe, type: 2}
-  m_sharedMaterial: {fileID: -594266456851866369, guid: a6fa9ec78dca58448bbbc583dc9adcbe,
+  m_fontAsset: {fileID: 11400000, guid: 1ee989b7d0c5dc440b48450425748521, type: 2}
+  m_sharedMaterial: {fileID: -6487795256491227891, guid: 1ee989b7d0c5dc440b48450425748521,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -819,12 +819,12 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: -50
+  m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -1789,8 +1789,8 @@ MonoBehaviour:
   m_text: Mimi stayed in a bush crying in the middle of the forest until her owner
     found her.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 85c12f651d3fb5846875b2696ab449e0, type: 2}
-  m_sharedMaterial: {fileID: -1063758114699671328, guid: 85c12f651d3fb5846875b2696ab449e0,
+  m_fontAsset: {fileID: 11400000, guid: 1ee989b7d0c5dc440b48450425748521, type: 2}
+  m_sharedMaterial: {fileID: -6487795256491227891, guid: 1ee989b7d0c5dc440b48450425748521,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1851,7 +1851,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -134.77899, y: -74.679405, z: -1143.3044, w: -197.71037}
+  m_margin: {x: -230.33002, y: -74.679405, z: -1209.7747, w: -197.71037}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
