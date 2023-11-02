@@ -6,17 +6,38 @@ using UnityEngine.AI;
 
 public class CrocBridge : MonoBehaviour
 {
-    NavMeshLink crocBridge;    // Start is called before the first frame update
+    [SerializeField] GameObject[] crocBridge;
+    int crocPieces;
+    BoxCollider invisibleWall;
+
     void Start()
     {
-        crocBridge = GetComponent<NavMeshLink>();
 
-        
+        invisibleWall = GetComponent<BoxCollider>();
+
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Croc")){
+            other.gameObject.SetActive(false);
+            if (crocPieces < crocBridge.Length)
+            {
+                AddaCroc();
+            }
+          
+        }
     }
+
+    void AddaCroc()
+    {
+        crocBridge[crocPieces].SetActive(true);
+        crocPieces++;
+        if (crocPieces >= crocBridge.Length)
+        {
+            invisibleWall.enabled = false;
+        }
+    }
+
 }

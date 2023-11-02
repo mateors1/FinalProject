@@ -7,6 +7,7 @@ public class AnimalNavigation : MonoBehaviour
 {
     private bool canFollow = false;
     private bool isSelectingDestination = false;
+    private bool isGoingToTarget = false;
     public Transform player;
     protected NavMeshAgent agentAnimal;
     Transform defaultpos;
@@ -46,13 +47,15 @@ public class AnimalNavigation : MonoBehaviour
             {
                 agentAnimal.SetDestination(hit.point);
                 canFollow = false;
+                isGoingToTarget=true;
                 isSelectingDestination = false; // Exit selection mode
             }
         }
 
-        if (!isSelectingDestination && agentAnimal.remainingDistance <= agentAnimal.stoppingDistance)
+        if (isGoingToTarget && !isSelectingDestination && agentAnimal.remainingDistance <= agentAnimal.stoppingDistance)
         {
             canFollow = true;
+            isGoingToTarget = false;
         }
 
         if (canFollow)
