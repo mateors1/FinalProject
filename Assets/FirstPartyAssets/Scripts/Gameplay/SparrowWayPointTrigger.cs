@@ -14,8 +14,9 @@ public class SparrowWayPointTrigger : MonoBehaviour
 
     private void OnEnable()
     {
-        transform.position = EndOflevel.position;
+        //transform.position = EndOflevel.position;
         currentTarget = player;
+
     }
 
     void Start()
@@ -73,13 +74,26 @@ public class SparrowWayPointTrigger : MonoBehaviour
     }
 }
 
-
     void SwitchTarget()
     {
         Debug.Log("Current target before switch: " + currentTarget.name);
-        currentTarget = currentTarget == player ? EndOflevel : player;
+
+        // Check if the player is on the NavMesh
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(player.position, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            // If the player is on the NavMesh, switch between the player and the end of level
+            currentTarget = currentTarget == player ? EndOflevel : player;
+        }
+        else
+        {
+            // If the player is not on the NavMesh, set the target to the end of level
+            currentTarget = EndOflevel;
+            Debug.Log("Player is not on the NavMesh. Setting target to EndOfLevel.");
+        }
         Debug.Log("Current target after switch: " + currentTarget.name);
     }
+
 
 
 
