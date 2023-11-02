@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     [SerializeField] Rigidbody rb;
     private Animator animator;
+    AudioSource audioSource;
 
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -29,6 +31,10 @@ public class PlayerController : MonoBehaviour
         else
         {
             animator.SetBool("IsWalking", false);
+        }
+        if (rb.velocity.magnitude > 0.1f)
+        {
+            audioSource.Play();
         }
     }
 

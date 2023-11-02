@@ -95,7 +95,7 @@ public class ClockSpawner : MonoBehaviour
 
     void RebakeNavmesh(GameObject nextLevel)
     {
-        NavMeshSurface surface = nextLevel.GetComponent<NavMeshSurface>();
+        NavMeshSurface surface = nextLevel.GetComponentInChildren<NavMeshSurface>();
         if (surface != null)
         {
             surface.BuildNavMesh();

@@ -25,9 +25,11 @@ public class SparrowWayPointTrigger : MonoBehaviour
 
     IEnumerator InitializeAgent()
     {
-        yield return new WaitForEndOfFrame();
         agent = GetComponent<NavMeshAgent>();
         currentTarget = player;
+        yield return new WaitForEndOfFrame();
+        
+        
 
         // Sample a position on the NavMesh and move the agent to that position
         NavMeshHit hit;
@@ -47,14 +49,28 @@ public class SparrowWayPointTrigger : MonoBehaviour
     {
         if (agent != null && agent.enabled)
         {
-            if (agent.remainingDistance < agent.stoppingDistance)
+            // Check if path has been calculated for the agent
+            if (!agent.pathPending)
             {
-                Debug.Log("Switching target...");
-                SwitchTarget();
+                if (agent.remainingDistance < agent.stoppingDistance)
+                {
+                    Debug.Log("Switching target...");
+                    SwitchTarget();
+                }
+                // Ensure that the new destination is on the NavMesh
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(currentTarget.position, out hit, 1.0f, NavMesh.AllAreas))
+                {
+                    agent.SetDestination(hit.position);
+                }
+                else
+                {
+                    Debug.LogError("Cannot set destination: Target position is not on the NavMesh.");
+                }
             }
-            agent.SetDestination(currentTarget.position);
         }
     }
+
 
     void SwitchTarget()
     {

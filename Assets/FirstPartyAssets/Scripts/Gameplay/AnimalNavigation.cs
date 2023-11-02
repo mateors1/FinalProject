@@ -22,7 +22,7 @@ public class AnimalNavigation : MonoBehaviour
         agentAnimal = GetComponent<NavMeshAgent>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         inSpace = true;
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
@@ -76,5 +76,6 @@ public class AnimalNavigation : MonoBehaviour
     {
         canFollow = true;
         thisTrigger.enabled = false;
+        agentAnimal.SetDestination(player.position);
     }
 }
