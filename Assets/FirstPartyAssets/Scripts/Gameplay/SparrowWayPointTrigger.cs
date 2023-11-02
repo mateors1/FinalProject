@@ -14,19 +14,21 @@ public class SparrowWayPointTrigger : MonoBehaviour
 
     private void OnEnable()
     {
-        //transform.position = EndOflevel.position;
+        transform.position = EndOflevel.position;
+        currentTarget = player;
     }
 
     void Start()
     {
         defaultPoint = transform.position;
         StartCoroutine(InitializeAgent());
+        agent = GetComponent<NavMeshAgent>();
     }
 
     IEnumerator InitializeAgent()
     {
-        agent = GetComponent<NavMeshAgent>();
-        currentTarget = player;
+        
+        
         yield return new WaitForEndOfFrame();
         
         
@@ -45,31 +47,31 @@ public class SparrowWayPointTrigger : MonoBehaviour
 
 
 
-    private void Update()
+  private void Update()
+{
+    if (agent != null && agent.enabled)
     {
-        if (agent != null && agent.enabled)
+        // Check if path has been calculated for the agent
+        if(!agent.pathPending)
         {
-            // Check if path has been calculated for the agent
-            if (!agent.pathPending)
+            if (agent.remainingDistance < agent.stoppingDistance)
             {
-                if (agent.remainingDistance < agent.stoppingDistance)
-                {
-                    Debug.Log("Switching target...");
-                    SwitchTarget();
-                }
-                // Ensure that the new destination is on the NavMesh
-                NavMeshHit hit;
-                if (NavMesh.SamplePosition(currentTarget.position, out hit, 1.0f, NavMesh.AllAreas))
-                {
-                    agent.SetDestination(hit.position);
-                }
-                else
-                {
-                    Debug.LogError("Cannot set destination: Target position is not on the NavMesh.");
-                }
+                Debug.Log("Switching target...");
+                SwitchTarget();
+            }
+            // Ensure that the new destination is on the NavMesh
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(currentTarget.position, out hit, 1.0f, NavMesh.AllAreas))
+            {
+                agent.SetDestination(hit.position);
+            }
+            else
+            {
+                Debug.LogError("Cannot set destination: Target position is not on the NavMesh.");
             }
         }
     }
+}
 
 
     void SwitchTarget()
