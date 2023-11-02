@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     [SerializeField] Rigidbody rb;
     private Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -52,8 +54,12 @@ public class PlayerController : MonoBehaviour
         Vector3 forwardRelativeVerticalInput = playermovZ * forward;
         Vector3 rightRelativeHorizontalInput = playermovX * right;
 
-        //Crear una camara relativa la movimiento
+        //Crear una camara relativa al movimiento
         Vector3 cameraRelativeMovement = forwardRelativeVerticalInput + rightRelativeHorizontalInput;
+
+        float targetAngle = Mathf.Atan2(cameraRelativeMovement.x, cameraRelativeMovement.z) *Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
         transform.Translate(cameraRelativeMovement * speed * Time.fixedDeltaTime, Space.World);
     }
