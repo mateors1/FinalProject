@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/FirstPartyAssets/Scripts/Bushes.cs.meta
 guid: 3dd644d669dbd0049b334e724e28896b
+========
+guid: 14470779b1b21b046a1742941ef32957
+>>>>>>>> Development:Assets/FirstPartyAssets/Scripts/Gameplay/Borrar.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
