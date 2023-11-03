@@ -4,7 +4,7 @@ using Unity.Transforms;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+
 
 public class CounterTrigger : MonoBehaviour
 {

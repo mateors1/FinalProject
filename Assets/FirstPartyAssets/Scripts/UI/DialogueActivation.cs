@@ -34,6 +34,8 @@ public class DialogueActivation : MonoBehaviour
         if (collision.gameObject.CompareTag("Deer"))
         {
             buttonsToActivate[1].SetActive(true);
+            GameObject.FindGameObjectsWithTag("Deer").ToList().ForEach(obj => obj.SetActive(false));
+
         }
 
         // crocs
