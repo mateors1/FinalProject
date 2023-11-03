@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
-using static UnityEditorInternal.ReorderableList;
+
 
 public class AnimalIndication : MonoBehaviour
 {

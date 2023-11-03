@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour
         currentMessages = messages;
         activeMessage = 0;
         startConversation = true;
-
+        Time.timeScale = 0.0f;
         DisplayMessage();
     }
 
