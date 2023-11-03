@@ -49,6 +49,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Conversation ended");
             startConversation = false;
             dialogueBox.SetActive(false);
+            Time.timeScale = 1.0f;
         }
     }
 
