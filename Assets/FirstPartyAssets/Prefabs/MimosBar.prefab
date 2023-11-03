@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7745995494303781188}
   - component: {fileID: 2320720058595194211}
   - component: {fileID: 7687669183769849991}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 3.995525}
+  m_AnchoredPosition: {x: 0, y: 3.9955254}
   m_SizeDelta: {x: -0.0000076294, y: 2.3508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2320720058595194211
@@ -214,7 +214,7 @@ MonoBehaviour:
   emotionSprites:
   - {fileID: 21300000, guid: ec591751c9b5381409b91cd8bdc701c7, type: 3}
   - {fileID: 21300000, guid: 480c09aeadad0e849b512fd0305f3500, type: 3}
-  - {fileID: 21300000, guid: 4d4ec657d6a9de540ab1c55a0032e1f5, type: 3}
+  - {fileID: 21300000, guid: 65e4edfb63eaf834cbb7c9ad05b87a9b, type: 3}
 --- !u!1 &5131643073152084999
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 5997614374152472855}
   - component: {fileID: 7095868603767291002}
   - component: {fileID: 4692763727932512445}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Emotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 1072567914262770296}
   - component: {fileID: 1362152440778163623}
   - component: {fileID: 1174716078568046735}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
