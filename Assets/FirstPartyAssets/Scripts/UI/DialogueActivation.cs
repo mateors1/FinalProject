@@ -31,7 +31,7 @@ public class DialogueActivation : MonoBehaviour
         }
 
         // deer
-        if (collision.gameObject.CompareTag("deer"))
+        if (collision.gameObject.CompareTag("Deer"))
         {
             buttonsToActivate[1].SetActive(true);
         }
