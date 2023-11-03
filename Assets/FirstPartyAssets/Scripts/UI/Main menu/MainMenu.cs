@@ -8,6 +8,11 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         Debug.Log("Play");
-        SceneManager.LoadScene("Prototype");
+        SceneManager.LoadScene("Beta");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
