@@ -1434,6 +1434,7 @@ MonoBehaviour:
   - {fileID: 776083934060815183}
   - {fileID: 4577919133546026889}
   - {fileID: 1206566035014138909}
+  fullCrocBridge: {fileID: 0}
 --- !u!1 &6482045642929738421
 GameObject:
   m_ObjectHideFlags: 0

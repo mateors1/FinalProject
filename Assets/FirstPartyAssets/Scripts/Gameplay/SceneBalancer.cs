@@ -10,12 +10,17 @@ public class SceneBalancer : MonoBehaviour
     private void Start()
     {
         Instance = this;
+        levels.Add(GameManager.instance.gameLevels[0]);
     }
 
 
     public void LoadBalanceSCenes(GameObject level)
     {
-        levels.Add(level);
+        if (!levels.Contains(level))
+        {
+            levels.Add(level);
+        }
+        
         if (levels.Count >= 3)
         {
             levels[0].SetActive(false);

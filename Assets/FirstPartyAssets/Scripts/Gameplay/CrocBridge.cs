@@ -9,6 +9,7 @@ public class CrocBridge : MonoBehaviour
     [SerializeField] GameObject[] crocBridge;
     int crocPieces;
     BoxCollider invisibleWall;
+    [SerializeField] GameObject fullCrocBridge;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class CrocBridge : MonoBehaviour
         if (crocPieces >= crocBridge.Length)
         {
             invisibleWall.enabled = false;
+            fullCrocBridge.SetActive(true);
         }
     }
 

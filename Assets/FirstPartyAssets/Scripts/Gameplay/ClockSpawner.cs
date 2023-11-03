@@ -103,6 +103,7 @@ public class ClockSpawner : MonoBehaviour
         if (surface != null)
         {
             surface.BuildNavMesh();
+            Debug.Log("navmesh baked");
         }
     }
 
