@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Capsule
   - Croc
+  - StartPoint
   layers:
   - Default
   - TransparentFX
