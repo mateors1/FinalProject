@@ -29529,6 +29529,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1338953440912931339, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 326745425}
+    - target: {fileID: 1338953440912931339, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 1612131803464455708, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29553,6 +29563,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592317041965469010, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 326745426}
+    - target: {fileID: 2592317041965469010, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FullScreen
       objectReference: {fileID: 0}
     - target: {fileID: 4811976639849459126, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
         type: 3}
@@ -29603,6 +29623,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278625607663815664, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 326745425}
+    - target: {fileID: 6278625607663815664, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 7230692286708643457, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
         type: 3}
@@ -32870,12 +32900,12 @@ PrefabInstance:
     - target: {fileID: 2683259673618723449, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000028491641
+      value: -0.00000007182333
       objectReference: {fileID: 0}
     - target: {fileID: 2683259673618723449, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000005641911
+      value: 0.000000014222447
       objectReference: {fileID: 0}
     - target: {fileID: 2804529206061741076, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
@@ -32905,12 +32935,12 @@ PrefabInstance:
     - target: {fileID: 2804529206061741076, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000003610518
+      value: -0.000000036105174
       objectReference: {fileID: 0}
     - target: {fileID: 2804529206061741076, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000032638303
+      value: 0.0000000032638303
       objectReference: {fileID: 0}
     - target: {fileID: 2804529206061741076, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
@@ -32930,22 +32960,22 @@ PrefabInstance:
     - target: {fileID: 2957685816773188853, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000013786911
+      value: -0.000000056778315
       objectReference: {fileID: 0}
     - target: {fileID: 2957685816773188853, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000032546479
+      value: 0.000000013403545
       objectReference: {fileID: 0}
     - target: {fileID: 9116307923117502785, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000028333647
+      value: -0.00000007232734
       objectReference: {fileID: 0}
     - target: {fileID: 9116307923117502785, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000002561302
+      value: 0.000000006538235
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32978,37 +33008,37 @@ PrefabInstance:
     - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.4874275
+      value: 0.6728359
       objectReference: {fileID: 0}
     - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.8447772
+      value: 0.70606375
       objectReference: {fileID: 0}
     - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.13987349
+      value: -0.17621517
       objectReference: {fileID: 0}
     - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.17088388
+      value: 0.13309442
       objectReference: {fileID: 0}
     - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 60.615
+      value: 85.588
       objectReference: {fileID: 0}
     - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -198.09
+      value: -140.26
       objectReference: {fileID: 0}
     - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -171.829
+      value: -114.974
       objectReference: {fileID: 0}
     - target: {fileID: 8577560401618101290, guid: 29cfedd0e2ab84c47b192fffe5df768d,
         type: 3}
