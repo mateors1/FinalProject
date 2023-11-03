@@ -5,26 +5,45 @@ using UnityEngine;
 
 public class DialogueActivation : MonoBehaviour
 {
-    public GameObject buttonToActivate;
+    public List<GameObject> buttonsToActivate;
     public GameObject dialogueBox;
 
     private void Update()
     {
         if (dialogueBox.activeInHierarchy)
         {
-            buttonToActivate.SetActive(false);
+            foreach (GameObject obj in buttonsToActivate)
+            {
+                obj.SetActive(false);
+            }
         }
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        // Verifica si la colisión ocurrió con el objeto deseado
+        // check the different object tags and gives the corresponding dialogue
+
+        //start
         if (collision.gameObject.CompareTag("StartPoint"))
         {
-            Time.timeScale = 0.0f;
-            buttonToActivate.SetActive(true);
+            buttonsToActivate[0].SetActive(true);
             GameObject.FindGameObjectsWithTag("StartPoint").ToList().ForEach(obj => obj.SetActive(false));
         }
+
+        // deer
+        if (collision.gameObject.CompareTag("Deer"))
+        {
+            buttonsToActivate[1].SetActive(true);
+        }
+
+        // crocs
+        if (collision.gameObject.CompareTag("Croc"))
+        {
+            buttonsToActivate[2].SetActive(true);
+        }
+
+
+
     }
 
 
