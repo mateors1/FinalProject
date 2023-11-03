@@ -12,7 +12,6 @@ public class CounterTrigger : MonoBehaviour
     public Image animalImage;
     public TextMeshProUGUI textMeshPro;
 
-
     private AnimalNavigation animalNavigation;
     public static CounterTrigger Instance;
     private int animalCounter;
