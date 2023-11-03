@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5932914, g: 0.7610504, b: 0.9165274, a: 1}
+  m_IndirectSpecularColor: {r: 0.5932913, g: 0.76105046, b: 0.9165273, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -95,7 +95,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: a184b9e3285f85d4cbd37279e60192a8,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 25d41aed4031ff94382ea1c584c61ffb,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -6467,6 +6467,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291449047}
   m_CullTransparentMesh: 1
+--- !u!1001 &1294809073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 103.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 79.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4874275
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.8447772
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.13987349
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.17088388
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 60.615
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -198.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 704402118868242788, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -171.829
+      objectReference: {fileID: 0}
+    - target: {fileID: 8577560401618101290, guid: 29cfedd0e2ab84c47b192fffe5df768d,
+        type: 3}
+      propertyPath: m_Name
+      value: Directional Light
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 29cfedd0e2ab84c47b192fffe5df768d, type: 3}
 --- !u!1001 &1317020818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10968,7 +11036,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1189110096}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Exit
+        m_MethodName: GameQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11698,3 +11766,4 @@ SceneRoots:
   - {fileID: 1903454215}
   - {fileID: 1585347981}
   - {fileID: 239698036}
+  - {fileID: 1294809073}
