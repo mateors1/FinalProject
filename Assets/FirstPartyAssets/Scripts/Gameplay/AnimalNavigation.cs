@@ -25,43 +25,39 @@ public class AnimalNavigation : MonoBehaviour
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
+            //CounterTrigger.Instance.ChangeAnimalSprite(gameobject.tag);
             HelpMeMeow();
         }
     }
 
     private void Update()
     {
-        // Press 'K' to enter selection mode
-        if (Input.GetKeyDown(KeyCode.E))
+        if (thisTrigger.enabled == false)
         {
-            isSelectingDestination = true;
-        }
-
-        // If in selection mode and left mouse button is clicked, set the clicked position as the destination
-        if (isSelectingDestination && Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                agentAnimal.SetDestination(hit.point);
-                canFollow = false;
-                isGoingToTarget=true;
-                isSelectingDestination = false; // Exit selection mode
+                isSelectingDestination = true;
+            }
+
+            // If in selection mode and left mouse button is clicked, set the clicked position as the destination
+            if (isSelectingDestination && Input.GetMouseButtonDown(0))
+            {
+                GoToTarget();
+            }
+
+            if (isGoingToTarget && !isSelectingDestination && agentAnimal.remainingDistance <= agentAnimal.stoppingDistance)
+            {
+                canFollow = true;
+                isGoingToTarget = false;
+            }
+
+            if (canFollow)
+            {
+                agentAnimal.SetDestination(player.position);
             }
         }
+        // Press 'K' to enter selection mode
 
-        if (isGoingToTarget && !isSelectingDestination && agentAnimal.remainingDistance <= agentAnimal.stoppingDistance)
-        {
-            canFollow = true;
-            isGoingToTarget = false;
-        }
-
-        if (canFollow)
-        {
-            agentAnimal.SetDestination(player.position);
-        }
     }
 
     private void OnDisable()
@@ -74,5 +70,19 @@ public class AnimalNavigation : MonoBehaviour
         canFollow = true;
         thisTrigger.enabled = false;
         agentAnimal.SetDestination(player.position);
+    }
+
+    void GoToTarget()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
+        {
+            agentAnimal.SetDestination(hit.point);
+            canFollow = false;
+            isGoingToTarget = true;
+            isSelectingDestination = false; // Exit selection mode
+        }
     }
 }

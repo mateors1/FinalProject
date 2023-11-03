@@ -89,8 +89,11 @@ public class ClockSpawner : MonoBehaviour
 
         // Align the forward direction of plane 2 to face the opposite direction of the spawn direction
         nextLevel.transform.rotation = Quaternion.LookRotation(spawnDirectionVector, clockPlane.transform.up);
-        nextLevel.SetActive(true);
-        RebakeNavmesh(nextLevel); 
+
+        LevelLoadBalancing(nextLevel);
+        RebakeNavmesh(nextLevel);
+
+
     }
 
     void RebakeNavmesh(GameObject nextLevel)
@@ -137,6 +140,22 @@ public class ClockSpawner : MonoBehaviour
         GameManager.instance.ScenesSolved++;
         advancesLevel = false;
 
+    }
+
+    void LevelLoadBalancing(GameObject nextLevel)
+    {
+        if (!nextLevel.activeSelf)
+        {
+            nextLevel.SetActive(true);
+        }
+
+        if (SceneBalancer.Instance != null)
+        {
+            SceneBalancer.Instance.LoadBalanceSCenes(nextLevel);
+        }
+        
+
+        
     }
 
  
