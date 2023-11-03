@@ -16,6 +16,7 @@ public class MusicBetweenScenes : MonoBehaviour
     private void Awake()
     {
         if (FindObjectsOfType(GetType()).Length > 1)
+
         {
             Destroy(gameObject);
         }
