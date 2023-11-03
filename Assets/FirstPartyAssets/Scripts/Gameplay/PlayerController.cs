@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Rigidbody rb;
     private Animator animator;
     AudioSource audioSource;
+    [SerializeField] AudioClip steps;
 
 
     // Start is called before the first frame update
@@ -32,9 +33,9 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
         }
-        if (rb.velocity.magnitude > 0.1f)
+        if (animator.GetBool("IsWalking") && !audioSource.isPlaying)
         {
-            audioSource.Play();
+            audioSource.PlayOneShot(steps);
         }
     }
 
