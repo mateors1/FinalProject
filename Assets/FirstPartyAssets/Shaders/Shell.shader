@@ -1,7 +1,7 @@
-Shader "Custom/Water" {
+Shader "Custom/Shell" {
 	SubShader {
 		Tags {
-			"LightMode" = "ForwardBase"
+			"LightMode" = "UniversalForward"
 		}
 
 		Pass {
@@ -11,7 +11,7 @@ Shader "Custom/Water" {
 			// of resources since generally you can't see those triangles but in this case we can, so we disable the backface culling
             Cull Off
 
-			CGPROGRAM
+			HLSLPROGRAM
 
 			// These inform the shader what functions to use for the rendering pipeline, since below my vertex shader is named 'vp' then we tell the shader
 			// to use 'vp' for the vertex shader and 'fp' for the fragment shader
@@ -104,8 +104,8 @@ Shader "Custom/Water" {
 
 				// These are unused parameters but they are useful to have for playing around, such as maybe using the position of the object to generate
 				// noise instead of the uv coordinates if you want to have a wacky effect where the ball changes its hair as it moves idk man
-                i.worldPos = mul(unity_ObjectToWorld, v.vertex);
-                i.pos = UnityObjectToClipPos(v.vertex);
+                //i.worldPos = mul(unity_ObjectToWorld, v.vertex); -------------------------------
+                //i.pos = UnityObjectToClipPos(v.vertex);---------------------------------------------
 
 				// This passes the vertex uvs into the fragment shader to be interpolated
                 i.uv = v.uv;
@@ -184,7 +184,7 @@ Shader "Custom/Water" {
 			}
 
 			// This indicates the end of the CG code block
-			ENDCG
+			ENDHLSL
 		}
 	}
 }
