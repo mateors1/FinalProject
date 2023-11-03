@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class AnimalNavigation : MonoBehaviour
 {
-    public bool inSpace = false;
+    public bool animalInteraction = false;
     private bool canFollow = false;
     private bool isSelectingDestination = false;
     private bool isGoingToTarget = false;
@@ -24,11 +24,10 @@ public class AnimalNavigation : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        inSpace = true;
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
+            CounterTrigger.Instance.ChangeAnimalSprite(gameObject.tag);
             HelpMeMeow();
-            inSpace = false;
         }
     }
 
