@@ -32,6 +32,16 @@ public class AnimalNavigation : MonoBehaviour
             HelpMeMeow();
             animator.SetBool("IsWalking", true);
 
+
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+
         }
     }
 
