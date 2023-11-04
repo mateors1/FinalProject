@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     AudioSource audioSource;
     [SerializeField] AudioClip steps;
+    public MimosBar mimosBar;
 
 
     // Start is called before the first frame update
@@ -22,11 +24,15 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        AnimatorType();
 
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
         {
             animator.SetBool("IsWalking", true);
             MovePlayerRelativeToCamera();
+            animator.SetBool("IsBad", false);
+            animator.SetBool("IsMid", false);
+            animator.SetBool("IsOkey", false);
             //rb.MovePosition(rb.position + moveInput * speed * Time.fixedDeltaTime);
         }
         else
@@ -37,6 +43,7 @@ public class PlayerController : MonoBehaviour
         {
             audioSource.PlayOneShot(steps);
         }
+        
     }
 
     void MovePlayerRelativeToCamera()
@@ -69,5 +76,27 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
         transform.Translate(cameraRelativeMovement * speed * Time.fixedDeltaTime, Space.World);
+    }
+
+    public void AnimatorType()
+    {
+        if (mimosBar.index == 0)
+        {
+            animator.SetBool("IsBad", true);
+            animator.SetBool("IsMid", false);
+            animator.SetBool("IsOkey", false);
+        }
+        else if (mimosBar.index == 1)
+        {
+            animator.SetBool("IsBad", false);
+            animator.SetBool("IsMid", true);
+            animator.SetBool("IsOkey", false);
+        }
+        else if (mimosBar.index == 2)
+        {
+            animator.SetBool("IsBad", false);
+            animator.SetBool("IsMid", false);
+            animator.SetBool("IsOkey", true);
+        }
     }
 }

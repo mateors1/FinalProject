@@ -1,6 +1,7 @@
-Shader "Custom/Shell" {
+Shader "Custom/Shell1" {
 	SubShader {
 		Tags {
+			"RenderPipeline" = "UniversalPipeline"
 			"LightMode" = "UniversalForward"
 		}
 
@@ -20,8 +21,8 @@ Shader "Custom/Shell" {
 
 			// Unity has a lot of built in useful graphics functions, all this stuff is on github which you can look at and read there aren't really any
 			// docs on it lmao
-			#include "UnityPBSLighting.cginc"
-            #include "AutoLight.cginc"
+			//#include "UnityPBSLighting.cginc"
+            //#include "AutoLight.cginc"
 
 			// This is the struct that holds all the data that vertices contain when being passed into the gpu, such as the initial vertex position,
 			// the normal, and the uv coordinates

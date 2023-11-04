@@ -12,6 +12,7 @@ public class AnimalNavigation : MonoBehaviour
     protected NavMeshAgent agentAnimal;
     Transform defaultpos;
     BoxCollider thisTrigger;
+    Animator animator;
     public LayerMask groundLayer; // Assign the ground layer in the inspector
 
     void Start()
@@ -19,14 +20,18 @@ public class AnimalNavigation : MonoBehaviour
         thisTrigger = GetComponent<BoxCollider>();
         defaultpos = transform;
         agentAnimal = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
+            
             //CounterTrigger.Instance.ChangeAnimalSprite(gameobject.tag);
             HelpMeMeow();
+            animator.SetBool("IsWalking", true);
+
         }
     }
 
