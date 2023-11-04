@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7336413, g: 0.57731414, b: 0.69328535, a: 1}
+  m_IndirectSpecularColor: {r: 0.7336414, g: 0.5773141, b: 0.69328535, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10426,7 +10426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 17.260895, y: 30.431427}
+  m_AnchoredPosition: {x: 17.260864, y: 30.431427}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &595722158
@@ -29649,7 +29649,7 @@ PrefabInstance:
     - target: {fileID: 591036083034313731, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 591036083034313731, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
         type: 3}
@@ -29734,7 +29734,7 @@ PrefabInstance:
     - target: {fileID: 5347691250016578893, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5347691250016578893, guid: 972f12ac3d6d3584fbcd9c5e912fb864,
         type: 3}
@@ -33170,12 +33170,12 @@ PrefabInstance:
     - target: {fileID: 2683259673618723449, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000028491641
+      value: -0.000000010889749
       objectReference: {fileID: 0}
     - target: {fileID: 2683259673618723449, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000005641911
+      value: 0.000000002156386
       objectReference: {fileID: 0}
     - target: {fileID: 2804529206061741076, guid: 2969f620a15ae2d44baae97f516de82e,
         type: 3}

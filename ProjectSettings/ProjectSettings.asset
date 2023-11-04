@@ -910,11 +910,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 43b0d62d-8dc3-458b-9902-892eb749a4df
+  cloudProjectId: 19a27a5d-2a0d-430f-b595-e63fa104d4d7
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: FinalProject
-  organizationId: mattrs1
+  projectName: Mimi_TheGame
+  organizationId: liztatis2134
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
