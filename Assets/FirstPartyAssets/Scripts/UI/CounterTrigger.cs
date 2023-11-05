@@ -31,10 +31,13 @@ public class CounterTrigger : MonoBehaviour
             switch (animalTag)
             {
                 case "Croc":
-                    animalToDisplay = animalSprite[1];
+                    animalToDisplay = animalSprite[2];
                     break;
                 case "Sparrow":
                     animalToDisplay = animalSprite[0];
+                    break;
+                case "DeerCounter":
+                    animalToDisplay = animalSprite[1];
                     break;
                 default:
                     animalToDisplay = null;

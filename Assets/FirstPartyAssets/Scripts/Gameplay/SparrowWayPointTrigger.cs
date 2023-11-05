@@ -10,7 +10,7 @@ public class SparrowWayPointTrigger : MonoBehaviour
     Vector3 defaultPoint;
     NavMeshAgent agent;
     Transform currentTarget;
-
+    private bool counterSparrow = false;
 
     private void OnEnable()
     {
@@ -24,6 +24,15 @@ public class SparrowWayPointTrigger : MonoBehaviour
         defaultPoint = transform.position;
         StartCoroutine(InitializeAgent());
         agent = GetComponent<NavMeshAgent>();
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && counterSparrow==false)
+        {
+            CounterTrigger.Instance.ChangeAnimalSprite(gameObject.tag);
+            counterSparrow = true;
+        }
     }
 
     IEnumerator InitializeAgent()
