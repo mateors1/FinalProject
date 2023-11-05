@@ -9,6 +9,7 @@ TagManager:
   - Level1
   - StartPoint
   - Deer
+  - Sparrow
   layers:
   - Default
   - TransparentFX

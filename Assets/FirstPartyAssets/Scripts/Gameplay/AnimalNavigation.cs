@@ -25,14 +25,16 @@ public class AnimalNavigation : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (other.CompareTag("Player"))
+        {
+            CounterTrigger.Instance.ChangeAnimalSprite(gameObject.tag);
+        }
+
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
-            
-            //CounterTrigger.Instance.ChangeAnimalSprite(gameobject.tag);
+        
             HelpMeMeow();
             animator.SetBool("IsWalking", true);
-
-
 
         }
     }
