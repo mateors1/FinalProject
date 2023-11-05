@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    
     [SerializeField] Image fadeImage;
     public void Play()
     {
@@ -16,8 +17,14 @@ public class MainMenu : MonoBehaviour
         
     }
 
-   public void GameQuit()
+    private void Start()
+    {
+        fadeImage.gameObject.SetActive(false);
+    }
+    public void GameQuit()
     {
         Application.Quit();
     }
+
+
 }
