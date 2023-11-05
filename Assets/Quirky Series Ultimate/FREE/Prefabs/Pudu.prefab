@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 6147876873679586677}
   m_Layer: 0
   m_Name: Pudu
-  m_TagString: Deer
+  m_TagString: DeerCounter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

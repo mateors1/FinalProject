@@ -10,6 +10,8 @@ public class LegendaryFawns : MonoBehaviour
     Vector3 defaultposition;
     [SerializeField] Transform destination;
 
+    private bool counterDeer = false;
+
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -27,5 +29,14 @@ public class LegendaryFawns : MonoBehaviour
     private void OnDisable()
     {
         transform.position = defaultposition;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && counterDeer == false)
+        {
+            CounterTrigger.Instance.ChangeAnimalSprite(gameObject.tag);
+            counterDeer = true;
+        }
     }
 }
