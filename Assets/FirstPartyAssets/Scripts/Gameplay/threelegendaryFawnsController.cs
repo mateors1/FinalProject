@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class threelegendaryFawnsController : MonoBehaviour
+public class ThreelegendaryFawnsController : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] LegendaryFawns[] legfendaryFawns;

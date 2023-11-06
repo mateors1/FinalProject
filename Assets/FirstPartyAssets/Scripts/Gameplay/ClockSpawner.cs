@@ -1,7 +1,9 @@
 using NUnit.Framework;
 using System.Collections;
 using Unity.AI.Navigation;
+using UnityEditor.Build;
 using UnityEngine;
+
 
 public class ClockSpawner : MonoBehaviour
 {
@@ -16,9 +18,18 @@ public class ClockSpawner : MonoBehaviour
     int nextRandomLevel;
     [SerializeField] bool canMovePreviousLevel;
     bool islvloneCollider = true;
+    bool canUseCollider = true;
+    SceneTriggerManager triggerManager;
 
 
-    public enum SpawnDirection
+    private void Start()
+    {
+        triggerManager = FindObjectOfType<SceneTriggerManager>();
+        triggerManager.SwitchDelegates += ReEnableTriggers;
+
+}
+
+public enum SpawnDirection
     {
         ThreeOClock = 0,
         SixOClock = 1,
@@ -28,7 +39,8 @@ public class ClockSpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        
+        if (other.CompareTag("Player")&& canUseCollider)
         {
             if (islvloneCollider)
             {
@@ -50,6 +62,7 @@ public class ClockSpawner : MonoBehaviour
             {
                 LoadRandomLevel();
             }
+            triggerManager.BlockTriggers();
         }
         
 
@@ -166,5 +179,18 @@ public class ClockSpawner : MonoBehaviour
         
     }
 
+    IEnumerator CanUseTriggerAgain()
+    {
+        canUseCollider = !canUseCollider;
+        yield return new WaitForSeconds(10f);
+        canUseCollider = !canUseCollider;
+    }
+
  
+    void ReEnableTriggers()
+    {
+        StartCoroutine(CanUseTriggerAgain());   
+    }
+
+
 }

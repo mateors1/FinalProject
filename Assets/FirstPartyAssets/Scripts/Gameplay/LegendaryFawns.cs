@@ -7,6 +7,7 @@ public class LegendaryFawns : MonoBehaviour
 {
     NavMeshAgent agent;
     public bool canRun;
+    bool isMoving;
     Vector3 defaultposition;
     [SerializeField] Transform destination;
 
@@ -21,11 +22,11 @@ public class LegendaryFawns : MonoBehaviour
     void Update()
     {
         if (canRun) {
-            agent.SetDestination(destination.position);
+            StartMoving();
         }
-        if (agent.remainingDistance < 0.2f) ;
+        if (agent.remainingDistance < 0.2f && isMoving);
         {
-            gameObject.SetActive(false);
+           // gameObject.SetActive(false);
         }
     }
 
@@ -41,5 +42,11 @@ public class LegendaryFawns : MonoBehaviour
             CounterTrigger.Instance.ChangeAnimalSprite(gameObject.tag);
             counterDeer = true;
         }
+    }
+    
+    void StartMoving()
+    {
+        agent.SetDestination(destination.position);
+        isMoving = true;    
     }
 }
