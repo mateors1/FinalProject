@@ -23,7 +23,10 @@ public class LegendaryFawns : MonoBehaviour
         if (canRun) {
             agent.SetDestination(destination.position);
         }
-        
+        if (agent.remainingDistance < 0.2f) ;
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnDisable()

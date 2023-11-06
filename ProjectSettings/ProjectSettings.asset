@@ -137,8 +137,7 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.5
-  preloadedAssets:
-  - {fileID: 11400000, guid: 6da9096395c698b4ab8eb82029e5d008, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -891,7 +890,8 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -911,11 +911,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 19a27a5d-2a0d-430f-b595-e63fa104d4d7
+  cloudProjectId: 6fcfa1b2-a11e-42cd-973f-fc72071a692c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Mimi_TheGame
-  organizationId: liztatis2134
+  organizationId: mattrs1
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
