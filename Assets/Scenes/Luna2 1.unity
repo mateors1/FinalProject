@@ -8122,6 +8122,7 @@ GameObject:
   - component: {fileID: 478733072}
   - component: {fileID: 478733071}
   - component: {fileID: 478733074}
+  - component: {fileID: 478733075}
   m_Layer: 0
   m_Name: trigger4
   m_TagString: Untagged
@@ -8227,6 +8228,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseArbol: {fileID: 1842288594}
+--- !u!54 &478733075
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478733069}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &479387755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9641,6 +9669,7 @@ GameObject:
   - component: {fileID: 541199793}
   - component: {fileID: 541199792}
   - component: {fileID: 541199795}
+  - component: {fileID: 541199796}
   m_Layer: 0
   m_Name: trigger5
   m_TagString: Untagged
@@ -9746,6 +9775,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseArbol: {fileID: 1789944231}
+--- !u!54 &541199796
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541199790}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &549052126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23152,6 +23208,7 @@ GameObject:
   - component: {fileID: 1398875558}
   - component: {fileID: 1398875557}
   - component: {fileID: 1398875560}
+  - component: {fileID: 1398875561}
   m_Layer: 0
   m_Name: trigger2
   m_TagString: Untagged
@@ -23257,6 +23314,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseArbol: {fileID: 1974256205}
+--- !u!54 &1398875561
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398875555}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1402478759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25894,7 +25978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556332224}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27103394, y: -0.5487455, z: 0.17936234, w: 0.770226}
+  m_LocalRotation: {x: 0.27103397, y: -0.5487455, z: 0.17936234, w: 0.7702261}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27694,6 +27778,7 @@ GameObject:
   - component: {fileID: 1669229855}
   - component: {fileID: 1669229854}
   - component: {fileID: 1669229857}
+  - component: {fileID: 1669229858}
   m_Layer: 0
   m_Name: trigger1
   m_TagString: Untagged
@@ -27799,6 +27884,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseArbol: {fileID: 486027279}
+--- !u!54 &1669229858
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669229852}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1698323354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33543,6 +33655,7 @@ GameObject:
   - component: {fileID: 2073056486}
   - component: {fileID: 2073056485}
   - component: {fileID: 2073056488}
+  - component: {fileID: 2073056489}
   m_Layer: 0
   m_Name: trigger3
   m_TagString: Untagged
@@ -33648,6 +33761,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseArbol: {fileID: 646031148}
+--- !u!54 &2073056489
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073056483}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &2075294811
 PrefabInstance:
   m_ObjectHideFlags: 0
