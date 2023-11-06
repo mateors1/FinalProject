@@ -5,9 +5,9 @@ using UnityEngine.AI;
 
 public class AnimalNavigation : MonoBehaviour
 {
-    private bool canFollow = false;
-    private bool isSelectingDestination = false;
-    private bool isGoingToTarget = false;
+    public bool canFollow = false;
+    public bool isSelectingDestination = false;
+    public bool isGoingToTarget = false;
     public Transform player;
     protected NavMeshAgent agentAnimal;
     Transform defaultpos;
