@@ -1,7 +1,6 @@
-using NUnit.Framework;
+
 using System.Collections;
 using Unity.AI.Navigation;
-using UnityEditor.Build;
 using UnityEngine;
 
 
@@ -22,7 +21,7 @@ public class ClockSpawner : MonoBehaviour
     SceneTriggerManager triggerManager;
 
 
-    private void Start()
+    private void OnEnable()
     {
         triggerManager = FindObjectOfType<SceneTriggerManager>();
         triggerManager.SwitchDelegates += ReEnableTriggers;
@@ -192,5 +191,8 @@ public enum SpawnDirection
         StartCoroutine(CanUseTriggerAgain());   
     }
 
-
+    private void OnDisable()
+    {
+        triggerManager.SwitchDelegates -= ReEnableTriggers;
+    }
 }
