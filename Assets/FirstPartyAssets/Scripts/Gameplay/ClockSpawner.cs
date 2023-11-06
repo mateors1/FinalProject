@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Collections;
 using Unity.AI.Navigation;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class ClockSpawner : MonoBehaviour
     [SerializeField] int currentLevel;
     int nextRandomLevel;
     [SerializeField] bool canMovePreviousLevel;
+    bool islvloneCollider = true;
 
 
     public enum SpawnDirection
@@ -28,6 +30,12 @@ public class ClockSpawner : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (islvloneCollider)
+            {
+                FirstLevelColliderController.instance.EnableTrigger();
+                islvloneCollider = false;
+            }
+
             if (advancesLevel && isLevelGoal)
             {
                 AdvanceToNextLevel();
@@ -43,6 +51,7 @@ public class ClockSpawner : MonoBehaviour
                 LoadRandomLevel();
             }
         }
+        
 
         
     }
@@ -131,7 +140,7 @@ public class ClockSpawner : MonoBehaviour
         if (nextLevelIndex < GameManager.instance.gameLevels.Length)
         {
             SpawnObjectAtClockPosition(spawnDirection, GameManager.instance.gameLevels[nextLevelIndex]);
-           // currentLevel = nextLevelIndex; // update currentLevel for this instance
+           //currentLevel = nextLevelIndex; // update currentLevel for this instance
         }
     }
 
