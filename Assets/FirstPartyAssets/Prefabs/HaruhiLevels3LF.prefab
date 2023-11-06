@@ -21095,6 +21095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenCries: 2
+  animalcry: {fileID: 0}
 --- !u!82 &7044565998408653949
 AudioSource:
   m_ObjectHideFlags: 0
@@ -45908,6 +45909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenCries: 2
+  animalcry: {fileID: 0}
 --- !u!82 &8726102292168829948
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47737,6 +47739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenCries: 2
+  animalcry: {fileID: 0}
 --- !u!82 &7153195579400467123
 AudioSource:
   m_ObjectHideFlags: 0

@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         Vector3 rightRelativeHorizontalInput = playermovX * right;
 
         //Crear una camara relativa al movimiento
-        Vector3 cameraRelativeMovement = forwardRelativeVerticalInput + rightRelativeHorizontalInput;
+        Vector3 cameraRelativeMovement = (forwardRelativeVerticalInput + rightRelativeHorizontalInput).normalized;
 
         float targetAngle = Mathf.Atan2(cameraRelativeMovement.x, cameraRelativeMovement.z) *Mathf.Rad2Deg;
 
