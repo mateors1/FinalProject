@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class AnimalNavigation : MonoBehaviour
 {
-    public bool inSpace = false;
     private bool canFollow = false;
     private bool isSelectingDestination = false;
     private bool isGoingToTarget = false;
@@ -13,6 +12,7 @@ public class AnimalNavigation : MonoBehaviour
     protected NavMeshAgent agentAnimal;
     Transform defaultpos;
     BoxCollider thisTrigger;
+    Animator animator;
     public LayerMask groundLayer; // Assign the ground layer in the inspector
 
     void Start()
@@ -20,51 +20,57 @@ public class AnimalNavigation : MonoBehaviour
         thisTrigger = GetComponent<BoxCollider>();
         defaultpos = transform;
         agentAnimal = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        inSpace = true;
+
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.Q))
         {
+            //CounterTrigger.Instance.ChangeAnimalSprite(gameObject.tag);
             HelpMeMeow();
+            animator.SetBool("IsWalking", true);
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+
         }
     }
 
     private void Update()
     {
-        // Press 'K' to enter selection mode
-        if (Input.GetKeyDown(KeyCode.E))
+        if (thisTrigger.enabled == false)
         {
-            isSelectingDestination = true;
-            inSpace = false;
-        }
-
-        // If in selection mode and left mouse button is clicked, set the clicked position as the destination
-        if (isSelectingDestination && Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                agentAnimal.SetDestination(hit.point);
-                canFollow = false;
-                isGoingToTarget=true;
-                isSelectingDestination = false; // Exit selection mode
+                isSelectingDestination = true;
+            }
+
+            // If in selection mode and left mouse button is clicked, set the clicked position as the destination
+            if (isSelectingDestination && Input.GetMouseButtonDown(0))
+            {
+                GoToTarget();
+            }
+
+            if (isGoingToTarget && !isSelectingDestination && agentAnimal.remainingDistance <= agentAnimal.stoppingDistance)
+            {
+                canFollow = true;
+                isGoingToTarget = false;
+            }
+
+            if (canFollow)
+            {
+                agentAnimal.SetDestination(player.position);
             }
         }
+        // Press 'K' to enter selection mode
 
-        if (isGoingToTarget && !isSelectingDestination && agentAnimal.remainingDistance <= agentAnimal.stoppingDistance)
-        {
-            canFollow = true;
-            isGoingToTarget = false;
-        }
-
-        if (canFollow)
-        {
-            agentAnimal.SetDestination(player.position);
-        }
     }
 
     private void OnDisable()
@@ -76,5 +82,20 @@ public class AnimalNavigation : MonoBehaviour
     {
         canFollow = true;
         thisTrigger.enabled = false;
+        agentAnimal.SetDestination(player.position);
+    }
+
+    void GoToTarget()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
+        {
+            agentAnimal.SetDestination(hit.point);
+            canFollow = false;
+            isGoingToTarget = true;
+            isSelectingDestination = false; // Exit selection mode
+        }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,8 +11,13 @@ public class MimosBar : MonoBehaviour
     public Image fillImage;
     public Image emotionImage; // Asegúrate de asignar la imagen en el Inspector.
     public Sprite[] emotionSprites; // Array que contiene las tres imágenes de emociones.
+    public Animator animator;
+    public int index;
 
-
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     public void MaxMimos(int maxMimo)
     {
         slider.maxValue = maxMimo;
@@ -28,7 +34,7 @@ public class MimosBar : MonoBehaviour
     public void SetEmotion(int mimo, int maxMimo)
     {
         // Calcula el índice de la imagen de emoción en función de currentMimo y el número de imágenes disponibles (3).
-        int index = Mathf.Clamp(mimo / (maxMimo / 3), 0, 2); // Asegúrate de que el índice esté dentro de los límites (0-2).
+        index = Mathf.Clamp(mimo / (maxMimo / 3), 0, 2); // Asegúrate de que el índice esté dentro de los límites (0-2).
 
         // Establece la imagen de emoción.
         emotionImage.sprite = emotionSprites[index];

@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Collections;
 using Unity.AI.Navigation;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class ClockSpawner : MonoBehaviour
     [SerializeField] int currentLevel;
     int nextRandomLevel;
     [SerializeField] bool canMovePreviousLevel;
+    bool islvloneCollider = true;
 
 
     public enum SpawnDirection
@@ -28,6 +30,12 @@ public class ClockSpawner : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (islvloneCollider)
+            {
+                FirstLevelColliderController.instance.EnableTrigger();
+                islvloneCollider = false;
+            }
+
             if (advancesLevel && isLevelGoal)
             {
                 AdvanceToNextLevel();
@@ -38,11 +46,12 @@ public class ClockSpawner : MonoBehaviour
                 LoadNextLevel();
             }
 
-            else if (GameManager.instance.unlockedLevels<1)
+            else if (GameManager.instance.unlockedLevels >1)
             {
                 LoadRandomLevel();
             }
         }
+        
 
         
     }
@@ -89,16 +98,21 @@ public class ClockSpawner : MonoBehaviour
 
         // Align the forward direction of plane 2 to face the opposite direction of the spawn direction
         nextLevel.transform.rotation = Quaternion.LookRotation(spawnDirectionVector, clockPlane.transform.up);
+
         nextLevel.SetActive(true);
-        RebakeNavmesh(nextLevel); 
+        LevelLoadBalancing(nextLevel);
+        RebakeNavmesh(nextLevel);
+
+
     }
 
     void RebakeNavmesh(GameObject nextLevel)
     {
-        NavMeshSurface surface = nextLevel.GetComponent<NavMeshSurface>();
+        NavMeshSurface surface = nextLevel.GetComponentInChildren<NavMeshSurface>();
         if (surface != null)
         {
             surface.BuildNavMesh();
+            Debug.Log("navmesh baked");
         }
     }
 
@@ -126,7 +140,7 @@ public class ClockSpawner : MonoBehaviour
         if (nextLevelIndex < GameManager.instance.gameLevels.Length)
         {
             SpawnObjectAtClockPosition(spawnDirection, GameManager.instance.gameLevels[nextLevelIndex]);
-           // currentLevel = nextLevelIndex; // update currentLevel for this instance
+           //currentLevel = nextLevelIndex; // update currentLevel for this instance
         }
     }
 
@@ -137,6 +151,19 @@ public class ClockSpawner : MonoBehaviour
         GameManager.instance.ScenesSolved++;
         advancesLevel = false;
 
+    }
+
+    void LevelLoadBalancing(GameObject nextLevel)
+    {
+      
+
+        if (SceneBalancer.Instance != null)
+        {
+            SceneBalancer.Instance.LoadBalanceSCenes(nextLevel);
+        }
+        
+
+        
     }
 
  

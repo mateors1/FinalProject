@@ -8,7 +8,9 @@ public class AnimalSoundTrigger : MonoBehaviour
     AudioSource audioSource;
     bool canCry = true;
     [SerializeField] int timeBetweenCries =2;
-    // Start is called before the first frame update
+    [SerializeField] AudioClip animalcry;
+
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -26,7 +28,14 @@ public class AnimalSoundTrigger : MonoBehaviour
 
     IEnumerator CanCryAgain()
     {
-        audioSource.Play();
+        if(animalcry != null)
+        {
+            audioSource.PlayOneShot(animalcry);
+        }
+        else
+        {
+            audioSource.Play();
+        }
         canCry = false;
         yield return new WaitForSeconds(timeBetweenCries);
         canCry=true;

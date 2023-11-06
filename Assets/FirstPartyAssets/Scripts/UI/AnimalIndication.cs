@@ -2,24 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
+
 
 public class AnimalIndication : MonoBehaviour
 {
-    private AnimalNavigation animalNavigation;
+
     public GameObject textBox;
 
-    // Update is called once per frame
-    void Update()
+    private bool isPlayerRange;
+    SphereCollider thisTrigger;
+    void Start()
     {
-        if (animalNavigation.inSpace == true)
+        thisTrigger = GetComponent<SphereCollider>();
+    }
+
+    private void Update()
+    {
+        if (isPlayerRange && Input.GetKeyDown(KeyCode.Q))
         {
-            StartIndication();
+            Destroy(textBox);
         }
     }
 
-    private void StartIndication()
+    private void OnTriggerEnter(Collider other)
     {
-        textBox.SetActive(true);
+        if (other.CompareTag("Player"))
+        {
+            isPlayerRange = true;
+            textBox.SetActive(true);
+        }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerRange = false;
+            textBox.SetActive(false);
+        }
+    }
+
 }
