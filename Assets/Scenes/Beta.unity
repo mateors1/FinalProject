@@ -737,6 +737,7 @@ GameObject:
   - component: {fileID: 326745421}
   - component: {fileID: 326745425}
   - component: {fileID: 326745426}
+  - component: {fileID: 326745427}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -862,6 +863,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   masterAudioMixer: {fileID: 24100000, guid: 3855eced3bcccff459968f8f8d3b0002, type: 2}
   sfxAudioMixer: {fileID: 24100000, guid: 867885b8bb8260c45899867dfba56ad8, type: 2}
+--- !u!114 &326745427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326745420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f8c3c4965125646aec0d9f097d6065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeImage: {fileID: 1415193504}
 --- !u!1001 &422414659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29413,7 +29427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1415193503
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29446,7 +29460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
