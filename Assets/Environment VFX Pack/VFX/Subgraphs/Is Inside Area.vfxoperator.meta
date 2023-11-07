@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cd008a68d34b70e40a8ba4771e6c39c3
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 251068
+  packageName: Essentials Environment VFX Pack
+  packageVersion: 1.0.0
+  assetPath: Assets/Environment VFX Pack/VFX/Subgraphs/Is Inside Area.vfxoperator
+  uploadId: 575991

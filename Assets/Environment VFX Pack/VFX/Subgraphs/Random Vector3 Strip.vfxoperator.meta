@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6522b6fda965fed47a789217f61b0a96
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 251068
+  packageName: Essentials Environment VFX Pack
+  packageVersion: 1.0.0
+  assetPath: Assets/Environment VFX Pack/VFX/Subgraphs/Random Vector3 Strip.vfxoperator
+  uploadId: 575991
