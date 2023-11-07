@@ -43862,7 +43862,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!136 &2072700045
 CapsuleCollider:
@@ -44700,17 +44700,17 @@ PrefabInstance:
     - target: {fileID: 646872170562748861, guid: b5c1ab80f5995fa4fb62bc769e1d3241,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 560.65
+      value: 565.7
       objectReference: {fileID: 0}
     - target: {fileID: 646872170562748861, guid: b5c1ab80f5995fa4fb62bc769e1d3241,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.616
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 646872170562748861, guid: b5c1ab80f5995fa4fb62bc769e1d3241,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 809.4
+      value: 802.75
       objectReference: {fileID: 0}
     - target: {fileID: 646872170562748861, guid: b5c1ab80f5995fa4fb62bc769e1d3241,
         type: 3}
@@ -44768,6 +44768,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6381323887217205701, guid: 3855eced3bcccff459968f8f8d3b0002,
         type: 2}
+    - target: {fileID: 1885491256265412066, guid: b5c1ab80f5995fa4fb62bc769e1d3241,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

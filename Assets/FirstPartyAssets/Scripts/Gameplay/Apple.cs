@@ -19,10 +19,16 @@ public class Apple : MonoBehaviour
         if (inventory != null)
         {
             audioSource.PlayOneShot(pickupSound);
-            inventory.ApplePickUp();
+            StartCoroutine(PlayTheChime());
             gameObject.SetActive(false);
 
             
+        }
+
+        IEnumerator PlayTheChime()
+        {
+            inventory.ApplePickUp();
+            yield return null;
         }
     }
 }

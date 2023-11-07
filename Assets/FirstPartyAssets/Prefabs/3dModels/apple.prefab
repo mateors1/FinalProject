@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7ef41d69ef921b549b1e2828a0249e15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 565.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7ef41d69ef921b549b1e2828a0249e15,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.616
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7ef41d69ef921b549b1e2828a0249e15,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 802.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7ef41d69ef921b549b1e2828a0249e15,
         type: 3}
@@ -62,6 +62,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ef41d69ef921b549b1e2828a0249e15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -160,9 +165,10 @@ AudioSource:
   m_GameObject: {fileID: 266264759392459527}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6381323887217205701, guid: 3855eced3bcccff459968f8f8d3b0002,
+    type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
