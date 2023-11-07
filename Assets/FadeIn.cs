@@ -5,7 +5,7 @@ using DG.Tweening;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class FadeOut : MonoBehaviour
+public class FadeIn : MonoBehaviour
 {
     [SerializeField] Image fadeImage;
     // Start is called before the first frame update
@@ -14,11 +14,5 @@ public class FadeOut : MonoBehaviour
         fadeImage.gameObject.SetActive(true);
         fadeImage.DOFade(0, 2f).OnComplete(() => { fadeImage.gameObject.SetActive(false); });
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
