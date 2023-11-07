@@ -12,7 +12,7 @@ public class FadeOut : MonoBehaviour
     void Start()
     {
         fadeImage.gameObject.SetActive(true);
-        fadeImage.DOFade(0, 1.5f).OnComplete(() => { fadeImage.gameObject.SetActive(false); });
+        fadeImage.DOFade(0, 2f).OnComplete(() => { fadeImage.gameObject.SetActive(false); });
 
     }
 
