@@ -22,6 +22,7 @@ public class AnimalIndication : MonoBehaviour
     {
         if (isPlayerRange && Input.GetKeyDown(KeyCode.Q))
         {
+            MenuSFX.instance.PlayMenuSound();
             Destroy(textBox);
         }
     }

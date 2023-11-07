@@ -17,6 +17,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
+        MenuSFX.instance.PlayMenuSound();
         pause = !pause;
         pauseMenu.SetActive(pause);
         if (pause)
@@ -31,19 +32,21 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-
+        MenuSFX.instance.PlayMenuSound();
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void Restart()
     {
+        MenuSFX.instance.PlayMenuSound();
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void MainMenu()
     {
+        MenuSFX.instance.PlayMenuSound();
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenuLiz");
     }

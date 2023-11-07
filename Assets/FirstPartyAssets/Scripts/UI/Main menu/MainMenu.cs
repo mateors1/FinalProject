@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Play");
         fadeImage.gameObject.SetActive(true);
+        MenuSFX.instance.PlayMenuSound();
         fadeImage.DOFade(1, 2f).OnComplete(() => { SceneManager.LoadScene(1); });
         
     }
@@ -23,6 +24,7 @@ public class MainMenu : MonoBehaviour
     }
     public void GameQuit()
     {
+        MenuSFX.instance.PlayMenuSound();
         Application.Quit();
     }
 

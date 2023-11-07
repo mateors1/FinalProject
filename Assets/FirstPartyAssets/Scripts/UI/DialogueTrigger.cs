@@ -10,6 +10,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void StartDialogue()
     {
+        MenuSFX.instance.PlayMenuSound();
         FindAnyObjectByType<DialogueManager>().OpenDialogue(messages, actors);
 
     }
