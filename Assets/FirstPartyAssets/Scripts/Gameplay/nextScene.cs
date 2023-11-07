@@ -11,7 +11,15 @@ public class nextScene : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.F) && (SceneManager.GetActiveScene().buildIndex ==1 ))
+        {
+            NextScene();
+        }
+    }
+
+    private void OnTriggerEnter (Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
             NextScene();
         }
@@ -33,7 +41,7 @@ public class nextScene : MonoBehaviour
         }
         Scene escenaActual = SceneManager.GetActiveScene();
         int indiceSiguienteEscena = escenaActual.buildIndex + 1;
-        if (indiceSiguienteEscena > 4)
+        if (indiceSiguienteEscena >= 3)
         {
             SceneManager.LoadScene(0);
         }
