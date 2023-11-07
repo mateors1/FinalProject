@@ -4856,6 +4856,16 @@ PrefabInstance:
       propertyPath: mimosBar
       value: 
       objectReference: {fileID: 1525105023}
+    - target: {fileID: 9209186232758609609, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9209186232758609609, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.37
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5511205480651625756, guid: 845c33028e883264da175ff4f6fa48b1, type: 3}
     - {fileID: 6391627681706940872, guid: 845c33028e883264da175ff4f6fa48b1, type: 3}
