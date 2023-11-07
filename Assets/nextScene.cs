@@ -33,7 +33,13 @@ public class nextScene : MonoBehaviour
         }
         Scene escenaActual = SceneManager.GetActiveScene();
         int indiceSiguienteEscena = escenaActual.buildIndex + 1;
-
-        SceneManager.LoadScene(indiceSiguienteEscena);
+        if (indiceSiguienteEscena > 4)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            SceneManager.LoadScene(indiceSiguienteEscena);
+        }
     }
 }
