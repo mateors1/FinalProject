@@ -7,6 +7,7 @@ public class MonkeysClimbing : MonoBehaviour
     private List<Transform> arboles = new List<Transform>();  // Lista de árboles
     public float climbSpeed = 1.0f; // Velocidad de subida
     private bool isClimbing = false;
+    private bool hasRotated = false;
     Animator animator;
     AnimalNavigation animNav;
     NavMeshAgent animNavMeshAg;
@@ -24,12 +25,16 @@ public class MonkeysClimbing : MonoBehaviour
             if (transform.position.y < 5)
             {
                 transform.Translate(Vector3.up * climbSpeed * Time.deltaTime);
+                if (!hasRotated)
+                {
+                    transform.Rotate(Vector3.right * -40);
+                    hasRotated = true;
+                }
+
             }
             else
             {
                 Destroy(gameObject);
-
-                //parte de la manzana
 
             }
         }
