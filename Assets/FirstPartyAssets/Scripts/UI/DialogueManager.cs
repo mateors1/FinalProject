@@ -26,17 +26,19 @@ public class DialogueManager : MonoBehaviour
         //DialogueCamera();
         currentActors = actors;
         currentMessages = messages;
-        StartCoroutine(StartDialogue());
-    }
-
-    private IEnumerator StartDialogue()
-    {
-        yield return new WaitForSeconds(0.2f);
         activeMessage = 0;
         startConversation = true;
         Time.timeScale = 0.0f;
         DisplayMessage();
+        
+        //StartCoroutine(StartDialogue());
     }
+
+    /*private IEnumerator StartDialogue()
+    {
+        yield return new WaitForSeconds(0.2f);
+
+    }*/
 
     void DisplayMessage()
     {
