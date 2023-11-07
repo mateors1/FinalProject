@@ -12,6 +12,7 @@ TagManager:
   - Sparrow
   - DeerCounter
   - Monkey
+  - KingMonkey
   layers:
   - Default
   - TransparentFX

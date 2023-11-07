@@ -7,6 +7,12 @@ public class DialogueActivation : MonoBehaviour
 {
     public List<GameObject> buttonsToActivate;
     public GameObject dialogueBox;
+    AppleInventory inventory;
+
+    private void Start()
+    {
+        inventory = GetComponent<AppleInventory>();
+    }
 
     private void Update()
     {
@@ -44,6 +50,24 @@ public class DialogueActivation : MonoBehaviour
             buttonsToActivate[2].SetActive(true);
         }
 
+        //monkeys
+        if (collision.gameObject.CompareTag("Monkey"))
+        {
+            buttonsToActivate[3].SetActive(true);
+        }
+
+        //King monkey
+        if (collision.gameObject.CompareTag("KingMonkey"))
+        {
+            if (inventory.numApples < 5)
+            {
+                buttonsToActivate[4].SetActive(true);
+            }else if(inventory.numApples == 5)
+            {
+                buttonsToActivate[5].SetActive(true);
+            }
+            
+        }
 
 
     }

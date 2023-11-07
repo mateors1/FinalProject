@@ -5,7 +5,7 @@ public class MonkeyTreeBehaviour : MonoBehaviour
     // Referencia al objeto base de árbol del árbol actual
     public Transform baseArbol;
     public GameObject apple;
-    public Transform appleInventory;
+    //public Transform appleInventory;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,7 +29,7 @@ public class MonkeyTreeBehaviour : MonoBehaviour
     {
         Vector3 appleSpawnPosition = baseArbol.position + new Vector3(0, 15, 0);
         GameObject apples = Instantiate(apple, appleSpawnPosition, Quaternion.identity);
-        apples.transform.parent = appleInventory;
+        //apples.transform.parent = appleInventory;
     }
 }
 

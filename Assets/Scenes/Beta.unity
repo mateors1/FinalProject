@@ -813,6 +813,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &82104843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1504640622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &82705171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1193,228 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.8, y: 12.771145, z: 2.58}
   m_Center: {x: 0.08424544, y: 5.3838296, z: 0.118820906}
+--- !u!1001 &189535987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 326745424}
+    m_Modifications:
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[0].name
+      value: King Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[1].name
+      value: King Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[2].name
+      value: Sparrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a951f860dd9720c46ae511a4db000482,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cd913eab14e1bec49937a3d5fe82b68f,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d55a0c261c79cc44b882a52e9b2c1581,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: Who do you think you are? If you don't bring me enough apples, don't
+        expect anything from me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: Sure, I do. But I don't think you can get there by yourself. You see,
+        you have to cross that river over there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[2].actorId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: Oh no, what do I do now?
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[3].actorId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: Don't worry, little one. Me and my friends can help you cross the river.
+        All you have to do is press "Q" to grab each one of us. When you arrive at
+        the river, press "E", and then click on the river so we can build a bridge
+        for you to cross.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Name
+      value: KingMonkey Conversation Button  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826018725676794897, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1582844427}
+    - target: {fileID: 6839351291820528579, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -543.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2517259b6462624d8ad1b7ea4b31d9a, type: 3}
+--- !u!224 &189535988 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 189535987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &198463645 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2129930334135631015, guid: c2637bd45070a5c46b3c1713804c1136,
@@ -2298,6 +2526,9 @@ RectTransform:
   - {fileID: 1668159111}
   - {fileID: 899896471}
   - {fileID: 163622973}
+  - {fileID: 1504640623}
+  - {fileID: 189535988}
+  - {fileID: 1563393709}
   - {fileID: 1582844428}
   - {fileID: 1415193503}
   m_Father: {fileID: 0}
@@ -14262,6 +14493,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &804556295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1563393708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &808476443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21127,7 +21364,7 @@ PrefabInstance:
     - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: m_Name
-      value: Deer Conversation Button (1)
+      value: Deer Conversation Button
       objectReference: {fileID: 0}
     - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
@@ -36214,6 +36451,245 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.8, y: 12.771143, z: 2.58}
   m_Center: {x: 0.08424544, y: 5.383829, z: 0.118820906}
+--- !u!1001 &1504640622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 326745424}
+    m_Modifications:
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[1].name
+      value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[2].name
+      value: Sparrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 65e4edfb63eaf834cbb7c9ad05b87a9b,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 72cd8162eca2a1d4db859c2bfdc90dec,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d55a0c261c79cc44b882a52e9b2c1581,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: Hello everyone, can any of you help me find my way back home?
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: Oh,sorry little fluffy baby. The only creature who knows that is the
+        King Monkey, and he might not be very generous with information unless you
+        have something to offer him.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[2].actorId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: something that I can offer to him? like what?
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[3].actorId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: Well, King Monkey has a sweet tooth. He adores apples. If you can find
+        and bring him some delicious apples, he might just share the way home with
+        you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[4].actorId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[4].message
+      value: But the apples are hanging so high up in the trees, and I can't reach
+        them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[5].actorId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[5].message
+      value: Don't worry; we can help you. Bring each one of us to the apple trees,
+        and we will pick the apples for you. We have only five apple trees here,
+        but that should be enough for him.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Monkeys Conversation Button '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826018725676794897, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1582844427}
+    - target: {fileID: 6839351291820528579, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -543.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2517259b6462624d8ad1b7ea4b31d9a, type: 3}
+--- !u!224 &1504640623 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1504640622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1511156372 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9118487988869883701, guid: bde08e7edaff52e4fa9c36ce7220c81c,
@@ -36355,6 +36831,238 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 16.087543, z: 2}
   m_Center: {x: -0.093931675, y: 7.439981, z: 0.064008236}
+--- !u!1001 &1563393708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 326745424}
+    m_Modifications:
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[0].name
+      value: King Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[1].name
+      value: Mimi
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[2].name
+      value: Sparrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a951f860dd9720c46ae511a4db000482,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 65e4edfb63eaf834cbb7c9ad05b87a9b,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: actors.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d55a0c261c79cc44b882a52e9b2c1581,
+        type: 3}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[0].actorId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: Your majesty, I have collected these apples for you. Can you tell me
+        how to get back to my home?
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[1].actorId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: Finally, it took you so long, but I accept your gifts now. You can pass
+        now; this is the way to your home.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[2].actorId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: Oh no, what do I do now?
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[3].actorId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: Don't worry, little one. Me and my friends can help you cross the river.
+        All you have to do is press "Q" to grab each one of us. When you arrive at
+        the river, press "E", and then click on the river so we can build a bridge
+        for you to cross.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Name
+      value: KingMonkeyApples Conversation Button  (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826018725676794897, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1582844427}
+    - target: {fileID: 6839351291820528579, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -543.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2517259b6462624d8ad1b7ea4b31d9a, type: 3}
+--- !u!224 &1563393709 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8289728707409924094, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1563393708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1568111218
 GameObject:
   m_ObjectHideFlags: 0
@@ -41424,6 +42132,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 12.771143, z: 2}
   m_Center: {x: 0.08424544, y: 5.383829, z: 0.118820906}
+--- !u!1 &1887551944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 189535987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1887964750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6637245270449213024, guid: bde08e7edaff52e4fa9c36ce7220c81c,
@@ -42145,7 +42859,7 @@ PrefabInstance:
     - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: m_Name
-      value: Crocs Conversation Button (2)
+      value: Crocs Conversation Button
       objectReference: {fileID: 0}
     - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
@@ -42679,6 +43393,7 @@ GameObject:
   - component: {fileID: 2072700045}
   - component: {fileID: 2072700046}
   - component: {fileID: 2072700047}
+  - component: {fileID: 2072700048}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -42918,6 +43633,9 @@ MonoBehaviour:
   - {fileID: 1109071049}
   - {fileID: 899896470}
   - {fileID: 163622972}
+  - {fileID: 82104843}
+  - {fileID: 1887551944}
+  - {fileID: 804556295}
   dialogueBox: {fileID: 1582844427}
 --- !u!114 &2072700047
 MonoBehaviour:
@@ -42933,6 +43651,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenCries: 2
   animalcry: {fileID: 0}
+--- !u!114 &2072700048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072700038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2f6d145bf0f914189e510cf0cd9464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2077363985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8841495392058473268, guid: a72f4cefc92476f439ecc8e67b113702,
