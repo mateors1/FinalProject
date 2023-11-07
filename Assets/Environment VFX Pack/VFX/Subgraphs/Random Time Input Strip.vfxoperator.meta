@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0b806c41da8f41e49b0597b8234d0c3c
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 251068
+  packageName: Essentials Environment VFX Pack
+  packageVersion: 1.0.0
+  assetPath: Assets/Environment VFX Pack/VFX/Subgraphs/Random Time Input Strip.vfxoperator
+  uploadId: 575991
