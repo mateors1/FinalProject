@@ -3489,7 +3489,7 @@ PrefabInstance:
     - target: {fileID: 8984920115739420101, guid: c373d8c7e9727ec418953256f7370ceb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.81
+      value: -3.87
       objectReference: {fileID: 0}
     - target: {fileID: 8984920115739420101, guid: c373d8c7e9727ec418953256f7370ceb,
         type: 3}
@@ -3499,7 +3499,7 @@ PrefabInstance:
     - target: {fileID: 8984920115739420101, guid: c373d8c7e9727ec418953256f7370ceb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.81
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 8984920115739420101, guid: c373d8c7e9727ec418953256f7370ceb,
         type: 3}
@@ -4953,6 +4953,11 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeVolume
       objectReference: {fileID: 0}
+    - target: {fileID: 3000106394822268839, guid: 6309f43cd05d419489d4356375b307f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 297
+      objectReference: {fileID: 0}
     - target: {fileID: 3304205193018550150, guid: 6309f43cd05d419489d4356375b307f6,
         type: 3}
       propertyPath: m_Colors.m_PressedColor.b
@@ -5116,7 +5121,7 @@ PrefabInstance:
     - target: {fileID: 6266222334977884612, guid: 6309f43cd05d419489d4356375b307f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.074005
+      value: 4.0739746
       objectReference: {fileID: 0}
     - target: {fileID: 6468561407591565647, guid: 6309f43cd05d419489d4356375b307f6,
         type: 3}
@@ -5142,6 +5147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931671022631999232, guid: 6309f43cd05d419489d4356375b307f6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 276
       objectReference: {fileID: 0}
     - target: {fileID: 7118970707508776456, guid: 6309f43cd05d419489d4356375b307f6,
         type: 3}
