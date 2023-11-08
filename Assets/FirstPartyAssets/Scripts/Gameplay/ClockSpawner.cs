@@ -24,7 +24,7 @@ public class ClockSpawner : MonoBehaviour
     // Called when the script is enabled
     private void OnEnable()
     {
-        StartCoroutine(CanUseTriggerAgain());
+        
         triggerManager = FindFirstObjectByType<SceneTriggerManager>(); // Find and assign the scene trigger manager
         triggerManager.SwitchDelegates += ReEnableTriggers; // Assign the function to re-enable triggers
     }
@@ -65,6 +65,10 @@ public class ClockSpawner : MonoBehaviour
                 LoadRandomLevel(); // Load a random level
             }
             triggerManager.BlockTriggers(); // Block triggers in the scene
+        }
+        else if (other.CompareTag("Player")&& !canUseCollider)
+        {
+            triggerManager.BlockTriggers();
         }
     }
 
