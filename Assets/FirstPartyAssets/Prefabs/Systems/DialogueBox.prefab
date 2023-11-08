@@ -232,6 +232,8 @@ MonoBehaviour:
   messageText: {fileID: 7391882519467176055}
   backgroundBox: {fileID: 5809320610760968823}
   dialogueBox: {fileID: 1983273448786608000}
+  cameraA: {fileID: 0}
+  cameraB: {fileID: 0}
 --- !u!1 &5199178252991180008
 GameObject:
   m_ObjectHideFlags: 0
