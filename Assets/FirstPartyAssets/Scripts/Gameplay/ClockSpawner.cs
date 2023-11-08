@@ -15,11 +15,11 @@ public class ClockSpawner : MonoBehaviour
     [SerializeField] bool isLevelGoal; // Indicates if the current level is the goal
     [SerializeField] int currentLevel; // Represents the current level
     int nextRandomLevel; // Represents the next random level
-    [SerializeField] bool canMovePreviousLevel; // Indicates if the previous level can be moved
-    bool islvloneCollider = true; // Indicates if it's the first level collider
+   
+   
     [SerializeField] bool canUseCollider = true; // Indicates if the collider can be used
     SceneTriggerManager triggerManager; // Manages scene triggers
-    [SerializeField] float timeWithTriggersDisabled = 5f; // Represents the time with triggers disabled
+ 
 
     // Called when the script is enabled
     private void OnEnable()
@@ -49,11 +49,7 @@ public class ClockSpawner : MonoBehaviour
         if (other.CompareTag("Player") && canUseCollider)
         {
             // Enable the trigger if it's the first level collider
-            if (islvloneCollider)
-            {
-                FirstLevelColliderController.instance.EnableTrigger();
-                islvloneCollider = false;
-            }
+          
 
             // Check for different conditions and perform appropriate actions
             if (advancesLevel && isLevelGoal)
@@ -147,7 +143,7 @@ public class ClockSpawner : MonoBehaviour
            
         }
 
-        if (nextRandomLevel < GameManager.instance.gameLevels.Length)
+        if (nextRandomLevel >0 )
         {
             SpawnObjectAtClockPosition(spawnDirection, GameManager.instance.gameLevels[nextRandomLevel]);
         }

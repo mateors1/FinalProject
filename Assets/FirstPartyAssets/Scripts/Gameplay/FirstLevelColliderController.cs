@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class FirstLevelColliderController : MonoBehaviour
 {
-    public static FirstLevelColliderController instance;
+    
     BoxCollider firstlevelColliderl;
     // Start is called before the first frame update
     void Start()
     {
         firstlevelColliderl = GetComponent<BoxCollider>();
-        if (instance == null) { instance =this; }
+       
     
     }
 
