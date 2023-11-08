@@ -140,13 +140,18 @@ public class ClockSpawner : MonoBehaviour
            
         }
 
-        if (GameManager.instance.gameLevels[nextRandomLevel] != null && GameManager.instance.gameLevels[nextRandomLevel].activeSelf)
+        if (nextRandomLevel != currentLevel)
         {
-            GameManager.instance.gameLevels[nextRandomLevel].SetActive(false);
-        }
+            if (GameManager.instance.gameLevels[nextRandomLevel] != null && GameManager.instance.gameLevels[nextRandomLevel].activeSelf)
+            {
+                GameManager.instance.gameLevels[nextRandomLevel].SetActive(false);
+            }
 
-    
+
+
             SpawnObjectAtClockPosition(spawnDirection, GameManager.instance.gameLevels[nextRandomLevel]);
+        }
+        
        
     }
 
