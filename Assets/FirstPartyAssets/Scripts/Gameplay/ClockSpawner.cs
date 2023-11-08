@@ -173,8 +173,7 @@ public class ClockSpawner : MonoBehaviour
     IEnumerator CanUseTriggerAgain()
     {
         canUseCollider = !canUseCollider;
-        yield return new WaitForSeconds(timeWithTriggersDisabled);
-        canUseCollider = !canUseCollider;
+        yield return null;
     }
 
     // Re-enable triggers after the specified duration
