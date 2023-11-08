@@ -41,7 +41,7 @@ public class nextScene : MonoBehaviour
         }
         Scene escenaActual = SceneManager.GetActiveScene();
         int indiceSiguienteEscena = escenaActual.buildIndex + 1;
-        if (indiceSiguienteEscena >= 3)
+        if (indiceSiguienteEscena > 3)
         {
             SceneManager.LoadScene(0);
         }
