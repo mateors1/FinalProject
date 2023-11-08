@@ -73,7 +73,7 @@ MonoBehaviour:
   advancesLevel: 0
   isLevelGoal: 0
   currentLevel: 0
-  canMovePreviousLevel: 0
+  canUseCollider: 1
 --- !u!1 &422799702271217527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   advancesLevel: 0
   isLevelGoal: 0
   currentLevel: 0
-  canMovePreviousLevel: 0
+  canUseCollider: 1
 --- !u!1 &3711658305503426393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1787,7 @@ MonoBehaviour:
   advancesLevel: 1
   isLevelGoal: 1
   currentLevel: 0
-  canMovePreviousLevel: 0
+  canUseCollider: 1
 --- !u!1 &6292644661637836990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,7 +2151,7 @@ MonoBehaviour:
   advancesLevel: 0
   isLevelGoal: 0
   currentLevel: 0
-  canMovePreviousLevel: 0
+  canUseCollider: 1
 --- !u!1 &8150612175350307172
 GameObject:
   m_ObjectHideFlags: 0

@@ -75,10 +75,7 @@ public class ClockSpawner : MonoBehaviour
     // Spawn the object at the specified clock position and direction
     void SpawnObjectAtClockPosition(SpawnDirection direction, GameObject nextLevel)
     {
-        if (nextLevel.activeSelf)
-        {
-            nextLevel.SetActive(false);
-        }
+       
         // Get the size of the clockPlane
         Vector3 clockPlaneSize = clockPlane.GetComponent<MeshRenderer>().bounds.size;
 
@@ -143,10 +140,14 @@ public class ClockSpawner : MonoBehaviour
            
         }
 
-        if (nextRandomLevel >0 )
+        if (GameManager.instance.gameLevels[nextRandomLevel] != null && GameManager.instance.gameLevels[nextRandomLevel].activeSelf)
         {
-            SpawnObjectAtClockPosition(spawnDirection, GameManager.instance.gameLevels[nextRandomLevel]);
+            GameManager.instance.gameLevels[nextRandomLevel].SetActive(false);
         }
+
+    
+            SpawnObjectAtClockPosition(spawnDirection, GameManager.instance.gameLevels[nextRandomLevel]);
+       
     }
 
     // Load the next level based on the current level index
