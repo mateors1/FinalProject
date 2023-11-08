@@ -24,9 +24,13 @@ public class ClockSpawner : MonoBehaviour
     // Called when the script is enabled
     private void OnEnable()
     {
-        
+        if (currentLevel > 1)
+        {
+            canUseCollider = false;
+        }
         triggerManager = FindFirstObjectByType<SceneTriggerManager>(); // Find and assign the scene trigger manager
         triggerManager.SwitchDelegates += ReEnableTriggers; // Assign the function to re-enable triggers
+        triggerManager.EnableInLevelTriggers += EnableOnLevelTriggers;
     }
 
     // Enumeration representing different spawn directions
@@ -68,7 +72,7 @@ public class ClockSpawner : MonoBehaviour
         }
         else if (other.CompareTag("Player")&& !canUseCollider)
         {
-            triggerManager.BlockTriggers();
+            triggerManager.EnableTriggers();
         }
     }
 
@@ -177,7 +181,8 @@ public class ClockSpawner : MonoBehaviour
     IEnumerator CanUseTriggerAgain()
     {
         canUseCollider = !canUseCollider;
-        yield return null;
+        yield return new WaitForSeconds(timeWithTriggersDisabled);
+        canUseCollider = !canUseCollider;
     }
 
     // Re-enable triggers after the specified duration
@@ -185,10 +190,16 @@ public class ClockSpawner : MonoBehaviour
     {
         StartCoroutine(CanUseTriggerAgain());
     }
+    void EnableOnLevelTriggers()
+    {
+        canUseCollider = true;
+    }
 
     // Called when the script is disabled
     private void OnDisable()
     {
         triggerManager.SwitchDelegates -= ReEnableTriggers;
+        triggerManager.EnableInLevelTriggers -= EnableOnLevelTriggers;
+        canUseCollider = false;
     }
 }
