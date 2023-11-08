@@ -44787,7 +44787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0393ec4b2351849bc8fda74aec62b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMimo: 720
+  maxMimo: 900
   currentMimo: 0
   mimoBar: {fileID: 1002112510}
 --- !u!114 &2072700041
@@ -46650,7 +46650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4387768171667564242}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08430926, y: -0.9716132, z: -0.18637219, w: -0.118849725}
+  m_LocalRotation: {x: 0.08430926, y: -0.9716132, z: -0.18637219, w: -0.11884971}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

@@ -29,7 +29,7 @@ public class ClockSpawner : MonoBehaviour
             canUseCollider = false;
         }
         triggerManager = FindFirstObjectByType<SceneTriggerManager>(); // Find and assign the scene trigger manager
-        triggerManager.SwitchDelegates += ReEnableTriggers; // Assign the function to re-enable triggers
+      
         triggerManager.EnableInLevelTriggers += EnableOnLevelTriggers;
     }
 
@@ -68,7 +68,7 @@ public class ClockSpawner : MonoBehaviour
             {
                 LoadRandomLevel(); // Load a random level
             }
-            triggerManager.BlockTriggers(); // Block triggers in the scene
+        
         }
         else if (other.CompareTag("Player")&& !canUseCollider)
         {
@@ -79,6 +79,10 @@ public class ClockSpawner : MonoBehaviour
     // Spawn the object at the specified clock position and direction
     void SpawnObjectAtClockPosition(SpawnDirection direction, GameObject nextLevel)
     {
+        if (nextLevel.activeSelf)
+        {
+            nextLevel.SetActive(false);
+        }
         // Get the size of the clockPlane
         Vector3 clockPlaneSize = clockPlane.GetComponent<MeshRenderer>().bounds.size;
 
@@ -137,10 +141,10 @@ public class ClockSpawner : MonoBehaviour
     {
         if (GameManager.instance.unlockedLevels != 0)
         {
-            do
-            {
-                nextRandomLevel = Random.Range(0, GameManager.instance.unlockedLevels);
-            } while (nextRandomLevel == currentLevel);
+            
+            
+                nextRandomLevel = Random.Range(0, currentLevel);
+           
         }
 
         if (nextRandomLevel < GameManager.instance.gameLevels.Length)
@@ -177,19 +181,10 @@ public class ClockSpawner : MonoBehaviour
         }
     }
 
-    // Coroutine to control the collider usage and re-enable it after a certain duration
-    IEnumerator CanUseTriggerAgain()
-    {
-        canUseCollider = !canUseCollider;
-        yield return new WaitForSeconds(timeWithTriggersDisabled);
-        canUseCollider = !canUseCollider;
-    }
+    
 
     // Re-enable triggers after the specified duration
-    void ReEnableTriggers()
-    {
-        StartCoroutine(CanUseTriggerAgain());
-    }
+ 
     void EnableOnLevelTriggers()
     {
         canUseCollider = true;
@@ -198,7 +193,7 @@ public class ClockSpawner : MonoBehaviour
     // Called when the script is disabled
     private void OnDisable()
     {
-        triggerManager.SwitchDelegates -= ReEnableTriggers;
+        
         triggerManager.EnableInLevelTriggers -= EnableOnLevelTriggers;
         canUseCollider = false;
     }
