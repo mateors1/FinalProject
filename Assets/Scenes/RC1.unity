@@ -37471,7 +37471,7 @@ PrefabInstance:
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: messages.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
@@ -37531,29 +37531,39 @@ PrefabInstance:
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: messages.Array.data[3].message
-      value: Well, King Monkey has a sweet tooth. He adores apples. If you can find
-        and bring him some delicious apples, he might just share the way home with
-        you.
+      value: Well, King Monkey has a sweet tooth. Although he can eat seeds, leaves,
+        fruits and insects, he adores apples.
       objectReference: {fileID: 0}
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: messages.Array.data[4].actorId
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: messages.Array.data[4].message
+      value: If you can find and bring him some delicious apples, he might just share
+        the way home with you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[5].actorId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[5].message
       value: But the apples are hanging so high up in the trees, and I can't reach
         them.
       objectReference: {fileID: 0}
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
-      propertyPath: messages.Array.data[5].actorId
+      propertyPath: messages.Array.data[6].actorId
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
-      propertyPath: messages.Array.data[5].message
+      propertyPath: messages.Array.data[6].message
       value: Don't worry; we can help you. Bring each one of us to the apple trees,
         and we will pick the apples for you. We have only five apple trees here,
         but that should be enough for him.
@@ -44097,7 +44107,7 @@ PrefabInstance:
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: messages.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
@@ -44156,10 +44166,19 @@ PrefabInstance:
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: messages.Array.data[3].message
-      value: Don't worry, little one. Me and my friends can help you cross the river.
-        All you have to do is press "Q" to grab each one of us. When you arrive at
-        the river, press "E", and then click on the river so we can build a bridge
-        for you to cross.
+      value: Don't worry, little one. Me and my friends can help you cross the river,
+        believe it or not we are quite sociable with each other.
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[4].actorId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
+        type: 3}
+      propertyPath: messages.Array.data[4].message
+      value: All you have to do is press "Q" to grab each one of us. When you arrive
+        at the river we will do the rest of the work.
       objectReference: {fileID: 0}
     - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
@@ -45221,7 +45240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6852215061549567369}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0005673685, y: 0.9988261, z: -0.012081681, w: 0.046905838}
+  m_LocalRotation: {x: 0.000567369, y: 0.9988261, z: -0.01208168, w: 0.046905912}
   m_LocalPosition: {x: 3.2699585, y: 3.50807, z: 5.611267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -46297,8 +46316,8 @@ PrefabInstance:
     - target: {fileID: 689698673943907681, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
       propertyPath: messages.Array.data[3].message
-      value: Of course, honey. Come with me, and I promise you won't get lost. We'll
-        find your way back home together.
+      value: Of course, honey. Come with me, and I promise you won't get lost. I'll
+        check the planet's magnetic fields to show you the way home.
       objectReference: {fileID: 0}
     - target: {fileID: 2596849488777526636, guid: a2517259b6462624d8ad1b7ea4b31d9a,
         type: 3}
@@ -46680,7 +46699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4387768171667564242}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.084309265, y: -0.9716132, z: -0.18637218, w: -0.11884968}
+  m_LocalRotation: {x: 0.08430926, y: -0.9716132, z: -0.18637219, w: -0.118849725}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
