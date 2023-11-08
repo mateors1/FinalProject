@@ -40031,11 +40031,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1089892003804757551, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1265981204747153730, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2072700039}
+    - target: {fileID: 1459749570642716063, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1490602590522132614, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: m_IsActive
@@ -40219,7 +40229,7 @@ PrefabInstance:
     - target: {fileID: 6672515259110797087, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: m_Name
-      value: PrototipeLuna (1)
+      value: PrototipeLuna
       objectReference: {fileID: 0}
     - target: {fileID: 6672515259110797087, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
@@ -40281,6 +40291,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2072700039}
+    - target: {fileID: 7655114264315670752, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8087432245638695005, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: currentLevel
@@ -40301,11 +40316,21 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8616320753688047199, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8621896277754422918, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 2072700048}
+    - target: {fileID: 8965891575656998028, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9032838474215608401, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -45471,7 +45496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6852215061549567369}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0005673685, y: 0.9988261, z: -0.012081681, w: 0.046905838}
+  m_LocalRotation: {x: 0.000567369, y: 0.9988261, z: -0.01208168, w: 0.046905912}
   m_LocalPosition: {x: 3.2699585, y: 3.50807, z: 5.611267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -46930,7 +46955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4387768171667564242}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.084309265, y: -0.9716132, z: -0.18637218, w: -0.11884968}
+  m_LocalRotation: {x: 0.08430926, y: -0.9716132, z: -0.18637219, w: -0.118849725}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
