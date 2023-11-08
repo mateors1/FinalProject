@@ -179,7 +179,7 @@ public class ClockSpawner : MonoBehaviour
     {
         if (SceneBalancer.Instance != null)
         {
-            SceneBalancer.Instance.LoadBalanceSCenes(nextLevel);
+            SceneBalancer.Instance.LoadBalanceSCenes(nextLevel, currentLevel);
         }
     }
 

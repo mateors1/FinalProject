@@ -8,6 +8,7 @@ public class SceneBalancer : MonoBehaviour
     public static SceneBalancer Instance;
     [SerializeField] int scenesonlist;
     [SerializeField] GameObject firstOnlist;
+    int currentLevel;
 
     private void Start()
     {
@@ -22,17 +23,47 @@ public class SceneBalancer : MonoBehaviour
         firstOnlist = levels[0];
     }
 
-    public void LoadBalanceSCenes(GameObject level)
+    public void LoadBalanceSCenes(GameObject level, int imOnLevel)
     {
-        if (!levels.Contains(level))
+
+        GameObject myCurrentLevel = GameManager.instance.gameLevels[imOnLevel];
+        if (!levels.Contains(myCurrentLevel)) 
         {
-            levels.Add(level);
+            if (!levels.Contains(level))
+            {
+                levels.Add(level);
+            }
+
+            if (levels.Count >= 3)
+            {
+
+                levels[0].SetActive(false);
+                levels.RemoveAt(0);
+            }
         }
+
+        else
+        {
+            if (!levels.Contains(level))
+            {
+                levels.Add(level);
+            }
+            if (levels.Count >= 3)
+            {
+                if (levels[0] == myCurrentLevel)
+                {
+                    levels[1].SetActive(false);
+                    levels.RemoveAt (1);
+                }
+                else if (levels[1] == myCurrentLevel)
+                {
+                    levels[0] .SetActive(false);
+                    levels.RemoveAt(0);
+                }
+
+            }
+        }
+
         
-        if (levels.Count >= 3)
-        {
-            levels[0].SetActive(false);
-            levels.RemoveAt(0);
-        }
     }
 }
