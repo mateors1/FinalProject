@@ -39991,6 +39991,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2072700039}
+    - target: {fileID: 28720008965393009, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 227423984959941163, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40086,6 +40091,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2072700039}
+    - target: {fileID: 3592233483114465172, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3851373535786603762, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
       propertyPath: currentLevel
@@ -40165,6 +40175,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5789426412742789031, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6034780287042932159, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}
@@ -40250,6 +40265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshData
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426185080464117818, guid: 845c33028e883264da175ff4f6fa48b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7535593396693553439, guid: 845c33028e883264da175ff4f6fa48b1,
         type: 3}

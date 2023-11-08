@@ -30,10 +30,7 @@ public class LegendaryFawns : MonoBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        transform.position = defaultposition;
-    }
+
 
     private void OnTriggerStay(Collider other)
     {
