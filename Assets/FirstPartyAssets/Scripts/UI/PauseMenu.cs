@@ -48,6 +48,6 @@ public class PauseMenu : MonoBehaviour
     {
         MenuSFX.instance.PlayMenuSound();
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenuLiz");
+        SceneManager.LoadScene(0);
     }
 }
