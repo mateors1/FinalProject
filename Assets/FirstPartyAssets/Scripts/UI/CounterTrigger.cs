@@ -39,6 +39,9 @@ public class CounterTrigger : MonoBehaviour
                 case "DeerCounter":
                     animalToDisplay = animalSprite[1];
                     break;
+                case "Monkey":
+                    animalToDisplay = animalSprite[3];
+                    break;
                 default:
                     animalToDisplay = null;
                     break;
